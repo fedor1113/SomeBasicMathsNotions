@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 250 100" preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<line x1="10" y1="50" x2="230" y2="50" stroke="black" stroke-width="2" />
+	<!--<line x1="210" y1="40" x2="230" y2="50" stroke="black" />
+	<line x1="210" y1="60" x2="230" y2="50" stroke="black" />-->
+	<polygon points="200,40 210,50 200,60 230,50" fill="black" stroke="black" />
+	<text x="230" y="70" font-size="24" font-style="italic" font-family="fantasy">x</text>
+	<text x="70" y="80" font-size="24" font-style="italic" font-family="fantasy">a</text>
+	<text x="155" y="80" font-size="24" font-style="italic" font-family="fantasy">b</text>
+	<circle cx="75" cy="50" r="5" />
+	<circle cx="160" cy="50" r="5" />
+
+	<line x1="75" y1="50" x2="75" y2="20" stroke="black" />
+	<line x1="160" y1="50" x2="160" y2="20" stroke="black" />
+	<line x1="75" y1="25" x2="160" y2="25" stroke="black" stroke-width="1.4" />
+	<polygon points="85,20 80,25 85,30 75,25" fill="black" stroke="black" />
+	<text x="105" y="20" font-size="15" font-style="italic" font-family="fantasy">p&lt;0</text>
+</svg>

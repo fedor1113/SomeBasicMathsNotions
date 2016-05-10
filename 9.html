@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Теорема Виета. Исследование корней квадратного уравнения по его дискриминанту и коэффициентам.</h1>
+		</header>
+		<main>
+			<article>
+				<section>
+					<p>
+						Когда говорят о <a href="7.html">квадратном уравнении</a>, при его решении первое, что обычно приходит в голову - это <a href="8.html">нахождение корней по основной формуле корней квадратного уравнения</a> или несколько других методов. Однако, решать некоторые квадратные уравнения можно гораздо быстрее и проще (даже устно) - через теорему Виета, а также значение корней можно быстро грубо оценить по коэффициентам и дискриминанту, через график квадратичной функции и т. д. На этой сранице и обсуждаются способы устного решения, прикидки и оценки корней квадратного уравнения.
+					</p>
+				</section>
+				<section>
+					<h2>Теорема Виета</h2>
+					<p>
+						<dfn>Теорема Виета</dfn> формулируется так: если приведённое квадратное уравнение <i><var>x</var>&sup2;+p<var>x</var>+q = 0</i> (a<var>x</var>&sup2;, где <i>a</i>=1) имеет корни x<sub>1</sub> и x<sub>2</sub>, то <i>x<sub>1</sub>+x<sub>2</sub> = -p</i> и <i>x<sub>1</sub>x<sub>2</sub> = q</i>, т.е. сумма корней равна числу обратному среднему (второму) коэффициенту, а их произведение равно свободному члену.
+					</p>
+					Доказательство (опирается на основную формулу квадратного уравнения).<br>
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mtable groupalign="{left}">
+								<mtr>
+									<mtd><maligngroup/>
+										<mo>&#x25FD;</mo>
+										<msup>
+											<mi>x</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mi>p</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>x</mi>
+										<mo>+</mo>
+										<mi>q</mi>
+										<mo>=</mo>
+										<mn>0</mn>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mi>D</mi><mo>&ApplyFunction;</mo>
+										<mo>=</mo>
+										<msup>
+											<mi>p</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>-</mo>
+										<mn>4</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>q</mi>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mfenced open="[" close=" " separators=",">
+											<mrow>
+												<mtable>
+													<mtr>
+														<mtd>
+															<msub>
+																<mi>x</mi>
+																<mn>1</mn>
+															</msub>
+															<mo>=</mo>
+															<mfrac>
+																<mrow>
+																	<mo>-</mo>
+																	<mi>p</mi>
+																	<mo>+</mo>
+																	<msqrt>
+																		<mi>D</mi><mo>&ApplyFunction;</mo>
+																	</msqrt>
+																</mrow>
+																<mrow>
+																	<mn>2</mn>
+																</mrow>
+															</mfrac>
+														</mtd>
+													</mtr>
+													<mtr>
+														<mtd>
+															<msub>
+																<mi>x</mi>
+																<mn>2</mn>
+															</msub>
+															<mo>=</mo>
+															<mfrac>
+																<mrow>
+																	<mo>-</mo>
+																	<mi>p</mi>
+																	<mo>-</mo>
+																	<msqrt>
+																		<mi>D</mi><mo>&ApplyFunction;</mo>
+																	</msqrt>
+																</mrow>
+																<mrow>
+																	<mn>2</mn>
+																</mrow>
+															</mfrac>
+														</mtd>
+													</mtr>
+												</mtable>
+											</mrow>
+										</mfenced>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msub>
+											<mi>x</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>+</mo>
+										<msub>
+											<mi>x</mi>
+											<mn>2</mn>
+										</msub>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<mo>-</mo>
+												<mi>p</mi>
+												<mo>+</mo>
+												<msqrt>
+													<mi>D</mi><mo>&ApplyFunction;</mo>
+												</msqrt>
+												<mo>-</mo>
+												<mi>p</mi>
+												<mo>-</mo>
+												<msqrt>
+													<mi>D</mi><mo>&ApplyFunction;</mo>
+												</msqrt>
+											</mrow>
+											<mrow>
+												<mn>2</mn>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mo>-</mo>
+										<mi>p</mi>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msub>
+											<mi>x</mi>
+											<mn>1</mn>
+										</msub>
+										<mo>&InvisibleTimes;</mo>
+										<msub>
+											<mi>x</mi>
+											<mn>2</mn>
+										</msub>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<mo>-</mo>
+														<mi>p</mi>
+														<mo>+</mo>
+														<msqrt>
+															<mi>D</mi><mo>&ApplyFunction;</mo>
+														</msqrt>
+													</mrow>
+												</mfenced>
+												<mo>&InvisibleTimes;</mo>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<mo>-</mo>
+														<mi>p</mi>
+														<mo>-</mo>
+														<msqrt>
+															<mi>D</mi><mo>&ApplyFunction;</mo>
+														</msqrt>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mrow>
+												<mn>2</mn>
+												<mo>&times;</mo>
+												<mn>2</mn>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<mi>p</mi>
+														<mo>-</mo>
+														<msqrt>
+															<mi>D</mi><mo>&ApplyFunction;</mo>
+														</msqrt>
+													</mrow>
+												</mfenced>
+												<mo>&InvisibleTimes;</mo>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<mi>p</mi>
+														<mo>+</mo>
+														<msqrt>
+															<mi>D</mi><mo>&ApplyFunction;</mo>
+														</msqrt>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mrow>
+												<mn>4</mn>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<msup>
+													<mi>p</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>-</mo>
+												<mi>D</mi><mo>&ApplyFunction;</mo>
+											</mrow>
+											<mrow>
+												<mn>4</mn>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<msup>
+													<mi>p</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>-</mo>
+												<msup>
+													<mi>p</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<mn>4</mn>
+												<mo>&InvisibleTimes;</mo>
+												<mi>q</mi>
+											</mrow>
+											<mrow>
+												<mn>4</mn>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mi>q</mi>
+										<mo>&#x25FD;</mo>
+									</mtd>
+								</mtr>
+							</mtable>
+						</mrow>
+					</math>
+					Теперь докажем обратное.
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mo>&#x25FD;</mo>
+							<msup>
+								<mi>x</mi>
+								<mn>2</mn>
+							</msup>
+							<mo>+</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mo>-</mo>
+									<msub>
+										<mi>x</mi>
+										<mn>1</mn>
+									</msub>
+									<mo>-</mo>
+									<msub>
+										<mi>x</mi>
+										<mn>2</mn>
+									</msub>
+								</mrow>
+							</mfenced>
+							<mo>&times;</mo>
+							<mi>x</mi>
+							<mo>+</mo>
+							<msub>
+								<mi>x</mi>
+								<mn>1</mn>
+							</msub>
+							<mo>&times;</mo>
+							<msub>
+								<mi>x</mi>
+								<mn>2</mn>
+							</msub>
+							<mo>=</mo>
+							<msup>
+								<mi>x</mi>
+								<mn>2</mn>
+							</msup>
+							<mo>-</mo>
+							<mi>x</mi>
+							<msub>
+								<mrow>
+									<mo>&times;</mo>
+									<mi>x</mi>
+								</mrow>
+								<mn>1</mn>
+							</msub>
+							<mo>-</mo>
+							<mi>x</mi>
+							<mo>&times;</mo>
+							<msub>
+								<mi>x</mi>
+								<mn>2</mn>
+							</msub>
+							<mo>+</mo>
+							<msub>
+								<mi>x</mi>
+								<mn>1</mn>
+							</msub>
+							<mo>&times;</mo>
+							<msub>
+								<mi>x</mi>
+								<mn>2</mn>
+							</msub>
+							<mo>=</mo>
+							<mi>x</mi>
+							<mo>&times;</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mi>x</mi>
+									<mo>-</mo>
+									<msub>
+										<mi>x</mi>
+										<mn>1</mn>
+									</msub>
+								</mrow>
+							</mfenced>
+							<mo>-</mo>
+							<msub>
+								<mi>x</mi>
+								<mn>2</mn>
+							</msub>
+							<mo>&times;</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mi>x</mi>
+									<mo>-</mo>
+									<msub>
+										<mi>x</mi>
+										<mn>1</mn>
+									</msub>
+								</mrow>
+							</mfenced>
+							<mo>=</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mi>x</mi>
+									<mo>-</mo>
+									<msub>
+										<mi>x</mi>
+										<mn>1</mn>
+									</msub>
+								</mrow>
+							</mfenced>
+							<mo>&times;</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mi>x</mi>
+									<mo>-</mo>
+									<msub>
+										<mi>x</mi>
+										<mn>2</mn>
+									</msub>
+								</mrow>
+							</mfenced>
+							<mo>&rArr;</mo>
+							<mfenced open="[" close=" " separators=",">
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mi>x</mi>
+												<mo>=</mo>
+												<msub>
+													<mi>x</mi>
+													<mn>1</mn>
+												</msub>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mi>x</mi>
+												<mo>=</mo>
+												<msub>
+													<mi>x</mi>
+													<mn>2</mn>
+												</msub>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</mfenced>
+							<mo>&#x25FD;</mo>
+						</mrow>
+					</math><br>
+					<p>
+						Также из доказательства выше можно сделать интересный вывод о представлении квадратного уравнения и о его разложении на множители. Во-первых, зная корни уравнения, его можно легко разложить на множители (как показано выше). Во-вторых, квадратное уравнение можно кроме как в стандартной форме представить в факторизованной форме. В-третьих, если подставить числа и получится 0, то это корни.
+					</p>
+					<p>
+						Посмотрев на квадратное уравнение в стандартной форме, можно быстро устно посчитать корни по теореме Виета (если оно не является приведённым, то можно разделить каждый член на старший коэффициент a - для небольших чисел это тоже можно проделать в уме). Подобрать устно числа, удовлетворяющие этим уравнениям, поможет прямая теорема. С её помощью можно определить знаки корней, не зная сами корни.
+					</p>
+					Чтобы определить знаки корней, можно делать так:
+					<ol>
+						<li>если свободный член отрицателен, то корни имеют различный знак, и наибольший по модулю из корней — знак, противоположный знаку второго коэффициента уравнения;</li>
+						<li>если свободный член положителен, то оба корня обладают одинаковым знаком, и это — знак, противоположный знаку второго коэффициента.</li>
+					</ol>
+				</section>
+				<section>
+					<h2>Исследование корней по коэффициентам и дискриминанту</h2>
+					<figure class="center_pic">
+						<img src="Quadratic_function.svg" alt="Квадратичная функция и её свойства">
+						<figcaption>Зависимость квадратичной функции от дискриминанта</figcaption>
+					</figure>
+					<p>
+						На предыдущих страницах <a href="7.html">была представлена квадртичная функция и её свойства</a>, а также <a href="8.html">основная формула корней квадратного уравнения</a>. На обеих страницах, однако, упомянается дискриминант квадратного трёхчлена (<i>D=p&sup2;-4aq</i>). Следует наконец разобраться в том, что такое дискриминант. Дискриминантом многочлена <i>p(x)</i> называется функция, задаваемая его коэффициентами и дающая информацию о природе его корней. Если точнее, то <dfn>дискриминант</dfn> - это произведение квадратов разностей корней многочлена, умноженное на старший коэффициент в степени на 2 меньше удвоенной степени многочлена.
+						<math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mi>D</mi><mo>&ApplyFunction;</mo>
+								<mo>(</mo>
+								<mi>p</mi>
+								<mo>)</mo>
+								<mo>=</mo>
+								<msubsup>
+									<mi>a</mi>
+									<mi>n</mi>
+									<mrow>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>n</mi>
+										<mo>-</mo>
+										<mn>2</mn>
+									</mrow>
+								</msubsup>
+								<munder>
+									<mo>&Product;</mo>
+									<mrow>
+										<mi>i</mi>
+										<mo>&lt;</mo>
+										<mi>j</mi>
+									</mrow>
+								</munder>
+								<msup>
+									<mrow>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msub>
+													<mi>&alpha;</mi>
+													<mi>i</mi>
+												</msub>
+												<mo>-</mo>
+												<msub>
+													<mi>&alpha;</mi>
+													<mi>j</mi>
+												</msub>
+											</mrow>
+										</mfenced>
+									</mrow>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+						</math>
+
+					</p>
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mi>D</mi><mo>&ApplyFunction;</mo>
+							<mo>(</mo>
+							<mi>p</mi>
+							<mo>)</mo>
+							<mo>=</mo>
+							<msubsup>
+								<mi>a</mi>
+								<mi>n</mi>
+								<mrow>
+									<mn>2</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>n</mi>
+									<mo>-</mo>
+									<mn>2</mn>
+								</mrow>
+							</msubsup>
+							<munder>
+								<mo>&Product;</mo>
+								<mrow>
+									<mi>i</mi>
+									<mo>&lt;</mo>
+									<mi>j</mi>
+								</mrow>
+							</munder>
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<msub>
+												<mi>&alpha;</mi>
+												<mi>i</mi>
+											</msub>
+											<mo>-</mo>
+											<msub>
+												<mi>&alpha;</mi>
+												<mi>j</mi>
+											</msub>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mtext>,</mtext>
+							<mspace width="0.5em" />
+							<mtext>где</mtext>
+							<mspace width="0.5em" />
+							<msub>
+								<mi>&alpha;</mi>
+								<mn>1</mn>
+							</msub>
+							<mo>&hellip;</mo>
+							<msub>
+								<mi>&alpha;</mi>
+								<mi>n</mi>
+							</msub>
+							<mtext> - </mtext>
+							<mtext>все корни многочлена;</mtext>
+							<mspace width="0.5em" />
+							<mtext>и</mtext>
+							<mspace width="0.5em" />
+							<msub>
+								<mi>a</mi>
+								<mi>n</mi>
+							</msub>
+							<mtext> - </mtext>
+							<mtext>старший коэффициент.</mtext>
+						</mrow>
+					</math>
+					<p>
+						Дискриминант обычно обозначают <i>D</i>. Также дискриминант можно обозначать буквой греческого алфавита дельта <i>&Delta;</i>.
+					</p>
+					<p>
+						Он связан с такими понятиями как <i>результант</i>. Имеет много применений и важных свойств. Причём, дискриминант - это многочлен со всегда <strong>целыми</strong> коэффициентами (независимо от того, какие берутся корни), симметричный относительно корней изначального многочлена. Очевидно, дискриминант равен 0 тогда и только тогда, когда уравнение имеет кратные корни.  Однако, дискриминант приобрёл наибольшую известность именно в связи с квадратными уравнениями, так как он очень полезен при нахождении корней этих самых уравнений, и формула, по которой он вычисляется для многочлена с такой низкой степенью (лишь второй), является достаточно несложной.
+					</p>
+					<p>
+						Поэтому наиболее часто слово <i>дискриминант</i> используется со значением <i>дискриминант квадратного трёхчлена</i>. Итак, в дальнейшем, под дискриминантом здесь будет подразумеваться именно это (особенно, учитывая тему этой страницы).
+					</p>
+					<p>
+						Следует начать, как водится, с того, что у квадратного уравнения гарантированно есть 2 корня на поле комплексных чисел (это, конечно, следует из основной теоремы алгебры). Так как корня у рассматриваемого уравнения два, то для нас дискриминант - квадрат разности корней или разница между ними. Иначе говоря, по дискриминанту в данном случае можно судить о разнице между корнями и о расстоянии от оси симметрии графика параболы до нулей квадратичной функции - корней уравнения. Также дискриминант - квадрат. Из этих рассуждений можно сделать вывод о том, что по дискриминанту возможно понять, какие корни у уравнения (картинка выше).
+					</p>
+					Выводы (в зависимости от значения дискриминанта есть 3 случая):
+					<ul>
+						<li>При D&gt;0 у уравнения есть два действительных корня (разница между ними больше нуля). Зная разнуцу, сразу имеем представление о графике.</li>
+						<li>При D=0 у уравнения есть два совпадающих корня - иногда также называют корнем кратности или двукратным в данном конкретном случае (разность равна нулю, следовательно значения корней равные).</li>
+						<li>При D&lt;0 (помня, что это квадрат, а корни по формуле вычисляются с дискриминантом <a href="4.html">под арифметическим квадратным корнем</a>) у уравнения нет корней на множестве действительных чисел. У таких уравнений есть корни в расширении множества действительных чисел - на поле комплексеых чисел.</li>
+					</ul>
+					<p>
+						Хотелось бы рассмотреть третий случай подробнее. При дискриминанте меньше 0 корней на множестве
+						<math display="inline">
+							<mrow>
+								<mi>&reals;</mi>
+							</mrow>
+						</math>
+						 нет. Это очевидно при первом взгляде на основную формулу корней или определение дискриминанта, так, имеет место быть квадратный корень из отрицательного числа. Именно для таких случаев множество вещественных (действительных) чисел &reals; можно расширить до комплексных чисел
+						<math display="inline">
+							<mrow>
+								<mi>&complexes;</mi>
+							</mrow>
+						</math>.
+					</p>
+					<p>
+						<dfn>Комплексное число</dfn> (ударение на второй слог) - это число вида <i>z=a+bi</i>, где a,b &isin; &reals; и i &isin; &ImaginaryI; (представьте здесь большое I, так как это обозначение используется нечасто, и я не смог найти такого символа, i - это такая величина, для которой верно равенство <i>i&sup2;=-1</i>); a = &real;(z) является вещественной частью <var>z</var>, и y = &image;(z) является мнимой частью <var>z</var>. Если мнимая часть равна 0, то число является действительным (это частный случай комплексных чисел). Если же вещественная часть равна 0, то число является мнимым, а точнее чисто мнимым. Основной идеей здесь являются мнимые единицы. Как уже было сказано ранее, мнимая единица - это комплексное число, квадрат которого равен -1. Обычно обозначется <i>i</i>. Именно мнимые единицы позволяют расширить поле вещественных чисел до комплексных. Причиной расширения, если говорить об общем случае, является как раз то, что не все многочлены с вещественными коэффициентами имеют корни в поле вещественных чисел. Однако, на поле комплексных чисел уже все многочлены имеют хотя бы одно решение (основная теорема алгебры).
+					</p>
+					<p>
+						Итак, корень квадратного уравнения в рассматриваемом случае не может быть полностью вещественен. Формулу корней квадртаного уравнения тогда можно записать так:
+						<math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mi>x</mi>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<mo>-</mo>
+										<mi>b</mi>
+										<mo>&PlusMinus;</mo>
+										<mo>&ImaginaryI;</mo>
+										<mo>&InvisibleTimes;</mo>
+										<msqrt>
+											<mfenced open="|" close="|" separators=",">
+												<mrow>
+													<mi>D</mi><mo>&ApplyFunction;</mo>
+												</mrow>
+											</mfenced>
+										</msqrt>
+									</mrow>
+									<mrow>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>a</mi>
+									</mrow>
+								</mfrac>
+							</mrow>
+						</math>.
+					</p>
+					<p>
+						Кроме дискриминанта многое об уравнении и корнях можно сказать и просто, посмотрев на коэффициенты. Если квадратный трёхчлен не имеет действительных корней, то он не раскладывается на линейные множители с вещественными коэффициентами.
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>

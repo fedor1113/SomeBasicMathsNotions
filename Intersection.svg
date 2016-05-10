@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<circle cx="150" cy="100" r="98" fill="transparent" stroke="black" />
+	<circle cx="250" cy="100" r="98" fill="transparent" stroke="black" />
+
+	<text x="80" y="50" font-size="40">A</text>
+	<text x="290" y="50" font-size="40">B</text>
+	<path d="M200 15 C 265 60, 265 140, 200 185" stroke="black" fill="aqua"/>
+	<path d="M200 15 C 265 60, 265 140, 200 185" stroke="black" fill="aqua" transform="rotate(180 200 100)"/>
+	<text x="181" y="180" font-size="20" font-family="monospace">A∩B</text>
+</svg>

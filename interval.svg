@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 250 100" preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<defs>
+		<g id="filling">
+			<line x1="0" y1="0" x2="5" y2="-10"/>
+			<line x1="5" y1="0" x2="10" y2="-10"/>
+		</g>
+	</defs>
+
+	<line x1="10" y1="50" x2="230" y2="50" stroke="black" stroke-width="2" />
+	<polygon points="200,40 210,50 200,60 232,50" fill="black" stroke="black" />
+	<text x="218" y="70" font-size="24" font-style="italic" font-family="fantasy">x</text>
+	<text x="62" y="80" font-size="24" font-style="italic" font-family="fantasy">a</text>
+	<text x="155" y="80" font-size="24" font-style="italic" font-family="fantasy">b</text>
+	<!--<text x="75" y="80" font-size="24" font-style="italic" font-family="fantasy">x</text>
+	<text x="150" y="80" font-size="24" font-style="italic" font-family="fantasy">x</text>-->
+
+	<use x="80" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="70" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="65" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="90" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="100" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="110" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="120" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="130" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="140" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="150" y="50" xlink:href="#filling" stroke="blue" />
+	<use x="155" y="50" xlink:href="#filling" stroke="blue" />
+
+	<circle cx="70" cy="50" r="4" fill="black" stroke="black" />
+	<circle cx="160" cy="50" r="4" fill="black" stroke="black" />
+
+
+	<!--<line x1="118" y1="25" x2="160" y2="25" stroke="black" />
+	<line x1="118" y1="25" x2="75" y2="25" stroke="black" />-->
+</svg>

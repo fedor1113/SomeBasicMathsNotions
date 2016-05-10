@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 250 100" preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<title>Модуль</title>
+	<desc>Определение модуля с помошью координатной прямой</desc>
+	<line x1="10" y1="50" x2="230" y2="50" stroke="black" stroke-width="2" />
+	<polygon points="200,40 210,50 200,60 230,50" fill="black" stroke="black" />
+	<text x="230" y="70" font-size="24" font-style="italic" font-family="fantasy">x</text>
+	<text x="62" y="80" font-size="24" font-style="italic" font-family="fantasy">-a</text>
+	<text x="155" y="80" font-size="24" font-style="italic" font-family="fantasy">a</text>
+	<circle cx="75" cy="50" r="5" />
+	<circle cx="160" cy="50" r="5" />
+	<circle cx="118" cy="50" r="5" />
+
+	<text x="111" y="80" font-size="20" font-style="italic" font-family="monospace">0</text>
+
+	<line x1="75" y1="50" x2="75" y2="20" stroke="black" />
+	<line x1="160" y1="50" x2="160" y2="20" stroke="black" />
+	<line x1="118" y1="50" x2="118" y2="20" stroke="black" />
+
+	<!--<line x1="118" y1="25" x2="160" y2="25" stroke="black" />
+	<line x1="118" y1="25" x2="75" y2="25" stroke="black" />-->
+
+	<!--&OverBrace;-->
+	<text x="75" y="70" font-size="70" font-family="monospace">⏞</text>
+	<text x="118" y="70" font-size="70" font-family="monospace">⏞</text>
+	<text x="84" y="12" font-size="14" font-style="italic" font-family="monospace">|a|</text>
+	<text x="126" y="12" font-size="14" font-style="italic" font-family="monospace">|a|</text>
+	<!--<polygon points="150,20 155,25 150,30 160,25" fill="black" stroke="black" />-->
+	<!--<polygon points="150,20 155,25 150,30 160,25" fill="black" stroke="black" />-->
+</svg>

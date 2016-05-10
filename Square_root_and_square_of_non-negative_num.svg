@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" preserveAspectRatio="xMidYMid meet">
+	<title>Square root function (and some other) graph</title>
+	<desc>Square root function and others connected with it (quite exact).</desc><!--32 user points = unity (approximately)-->
+	<line x1="250" y1="0" x2="250" y2="500" stroke="black" stroke-width="2" stroke-linecap="round"/>
+	<line x1="0" y1="250" x2="500" y2="250" stroke="black" stroke-width="2" stroke-linecap="round"/>
+	<line x1="250" y1="0" x2="260" y2="20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+	<line x1="250" y1="0" x2="240" y2="20" stroke="black" stroke-width="2" stroke-linecap="round"/>
+	<line x1="500" y1="250" x2="480" y2="260" stroke="black" stroke-width="2" stroke-linecap="round"/>
+	<line x1="500" y1="250" x2="480" y2="240" stroke="black" stroke-width="2" stroke-linecap="round"/>
+	<text x="235" y="270" font-family="sans-serif" font-size="25" fill="black">0</text>
+	<text x="275" y="275" font-family="sans-serif" font-size="25" fill="black">1</text>
+	<line x1="245" y1="219" x2="255" y2="219" stroke="black" stroke-width="2" stroke-linecap="round"/>
+	<!--<line x1="0" y1="219" x2="500" y2="219" stroke="black" stroke-width="1" stroke-linecap="round"/>
+	<line x1="281" y1="0" x2="281" y2="500" stroke="black" stroke-width="1" stroke-linecap="round"/>-->
+	<line x1="281" y1="255" x2="281" y2="245" stroke="black" stroke-width="2" stroke-linecap="round"/>
+	<text x="230" y="230" font-family="sans-serif" font-size="25" fill="black">1</text>
+	<text x="480" y="230" font-family="sans-serif" font-size="25" fill="black" style="font-style: italic;">x</text>
+	<text x="220" y="20" font-family="sans-serif" font-size="25" fill="black" style="font-style: italic;">y</text>
+
+
+	<line x1="500" y1="0" x2="0" y2="500" stroke="coral" stroke-width="1"  stroke-linecap="round"/>
+	<path stroke="coral" fill="none" d="M 250 250 q  70 0  160 -640" stroke-width="2" stroke-linecap="round"/>
+	<path stroke="grey" stroke-dasharray="5,5" fill="none" d="M 250 250 q  -70 0  -160 -640" stroke-width="2" stroke-linecap="round" />
+	<path stroke="coral" d="M 250 250 q 0 -60 470 -120" fill="none" stroke-width="2" stroke-linecap="round"/>
+	<path stroke="coral" stroke-dasharray="5,5" d="M 250 250 q 0 60 470 120" fill="none" stroke-width="2" stroke-linecap="round"/>
+	<line x1="250" y1="250" x2="500" y2="0" stroke="coral" stroke-width="2"  stroke-linecap="round"/>
+	<text x="440" y="160" font-family="fantasy" font-size="25" fill="black" style="font-style: italic;">y=√x</text>
+	<text x="330" y="100" font-family="fantasy" font-size="25" fill="black" style="font-style: italic;">y=x²</text>
+	<text x="320" y="120" font-family="fantasy" font-size="25" fill="black" style="font-style: italic;">(x≥0)</text>
+	<text x="380" y="20" font-family="fantasy" font-size="25" fill="black" style="font-style: italic;">y=x (x≥0)</text>
+
+	<!--<line stroke="gray" x1="378" y1="0" x2="378" y2="500" stroke-dasharray="1" stroke-width="1.5"/>
+	<line stroke="gray" x1="0" y1="186" x2="500" y2="186" stroke-dasharray="1" stroke-width="1.5"/>
+	<line stroke="gray" x1="314" y1="0" x2="314" y2="500" stroke-dasharray="1" stroke-width="1.5"/>
+	<line stroke="gray" x1="0" y1="122" x2="500" y2="122" stroke-dasharray="1" stroke-width="1.5"/>
+	<line x1="314" y1="122" x2="378" y2="186" stroke="black" stroke-dasharray="1" stroke-width="1.5"/>-->
+</svg>

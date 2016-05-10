@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!--31 user points - unity-->
+	<title>Виды алгебраических выражений</title>
+	<desc>Виды алгебраических выражений.</desc>
+	<text x="100"  y="20"
+        style="font-family: Times New Roman;
+               font-size  : 24;
+			   font-weight: bolder;
+               stroke     : black;
+               fill       : firebrick;">
+		Алгебраические выражения
+	</text>
+	<line x1="250" y1="25" x2="250" y2="100" stroke="black" />
+	<line x1="100" y1="100" x2="400" y2="100" stroke="black" />
+	<line x1="100" y1="100" x2="100" y2="150" stroke="black" />
+	<line x1="400" y1="100" x2="400" y2="150" stroke="black" />
+	<text x="45"  y="160"
+        style="font-family: Times New Roman;
+               font-size  : 24;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;
+			   text-decoration: underline;">
+		Рациональные
+	</text>
+	<text x="285"  y="160"
+        style="font-family: Times New Roman;
+               font-size  : 24;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;">
+		Иррациональные
+	</text>
+	<line x1="100" y1="165" x2="100" y2="220" stroke="black" />
+	<line x1="40" y1="220" x2="160" y2="220" stroke="black" />
+	<line x1="40" y1="220" x2="40" y2="260" stroke="black" />
+	<line x1="160" y1="220" x2="160" y2="260" stroke="black" />
+	<text x="20"  y="270"
+        style="font-family: Times New Roman;
+               font-size  : 20;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;">
+		Целые
+	</text>
+	<text x="120"  y="270"
+        style="font-family: Times New Roman;
+               font-size  : 20;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;">
+		Дробные
+	</text>
+	<line x1="40" y1="270" x2="40" y2="310" stroke="black" />
+	<text x="10"  y="310"
+        style="font-family: Times New Roman;
+               font-size  : 20;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;
+			   font-style: italic;">
+		Многочлены
+	</text>
+	<line x1="40" y1="315" x2="40" y2="340" stroke="black" />
+	<text x="10"  y="350"
+        style="font-family: Times New Roman;
+               font-size  : 20;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;
+			   font-style: italic;">
+		Одночлены
+	</text>
+	<text x="10"  y="370"
+        style="font-family: Times New Roman;
+               font-size  : 20;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;
+			   font-style: italic;">
+		(мономы)
+	</text>
+	<line x1="160" y1="320" x2="160" y2="270" stroke="black" />
+	<text x="110"  y="330"
+        style="font-family: Times New Roman;
+               font-size  : 20;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;
+			   font-style: italic;">
+		Алгебраические
+	</text>
+	<text x="140"  y="350"
+        style="font-family: Times New Roman;
+               font-size  : 20;
+			   font-weight: 200;
+               stroke     : black;
+               fill       : black;
+			   font-style: italic;">
+		дроби
+	</text>
+</svg>

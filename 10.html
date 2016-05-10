@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Числовые неравенства. Свойства числовых неравенств.</h1>
+		</header>
+		<main>
+			<article>
+				<section>
+					<h2>Числовые неравенства</h2>
+					<figure>
+						<img src="Defining_variable_by_comparison.svg" alt="Равенства и неравенства">
+						<figcaption>Сравнение величин</figcaption>
+					</figure>
+					<p>
+						Как в науке, так и в реальной жизни часто приходится сравнивать два каких-то числа. Иногда без этого нельзя даже говорить о значении вычислений. Допустим, используя числовые неравенства, <a href="6.html">можно найти приближённое значение иррациональных квадратных корней</a>, оценить значение переменной. Говоря о числовых неравенствах, следует прежде всего указать, что между двумя числами есть всего три рода возможных взаимосвязей - соотношений: они могут быть равны (<i>a = b</i>), a может быть меньше b (<i>a &lt; b</i>), a может быть больше b (<i>a &gt; b</i>) (конечно, при <i>a&ne;b</i> можно также говорить о разнице между величинами: например, если a сильно (на нескнолько порядков) больше чем b, то это даже можно обозначить специальным символом <i>&raquo;</i>, что показывает интерес людей именно к разнице, хотя, конечно, обычно уже интересует именно конкретная величина). Результат сравнения и записывают в виде равенств или неравенств. Для нескольких чисел можно использовать последовательность (цепочку неравенств) в порядке убывания, возрастания или <a href="12.html">системы неравенств</a>. Вообще, неравенства часто используются в математике, и также важны как и равенства. Примером их использования также будет нераветсво треугольника в геометрии, по которому можно оценить, существует ли треугольник с даннми сторонами.
+					</p>
+					<p>
+						<span>Фактически, <dfn>неравенства</dfn> - это утверждения об относительной величине какой-либо переменной, числа.</span> Неравенства, которые разобраны выше подразумевают, что оцениваемая величина не может быть равна числу, относительно которого оценивается, но это, явно, не всегда верно.
+					</p>
+					<p>
+						Также нужно заметить, что кроме <i>строгих</i> неравенств (говорят, a строго больше b, a строго меньше b), есть и <i>нестрогие</i> неравенства (a меньше или равно b, a больше или равно b). Они используются, когда доподлинно неизвестно равны величины или меньше друг друга, равны величины или больше друг друга и т.д. Например, когда нужно купить, что-то в магазине, очевидно, можно купить продуктов на сумму меньшую или равную деньгам, которые взяты с собой (S&le;M). Кроме <i>больше или равно</i> и <i>меньше или равно</i>, что является и названиями знаков, можно также говорить <i>не меньше чем</i> и <i>не больше чем</i>.
+					</p>
+					<p>
+						Здесь также можно добавить, что если использовать нестрогие неравенства там, где можно использовать строгие, не даводить расчёты до конца, оставлять, например, <i><var>x</var> &gt; 2</i>, когда известно, что <i><var>x</var> &gt; 3</i>, то подобные неравенства будут <i>неточными</i>. <dfn title="точное неравенство">Точным неравенством</dfn> называется неравенство, которое нельзя улучшить. Конечно, логичнее всегда делать свои неравенсва точными.
+					</p>
+					<p>
+						Последний случай, который следует разобрать - это <a href="12.html"><i>совокупность неравенств</i></a>, когда есть несколько возможных вариантов для одной величины и выполняется либо один, либо другой.
+					</p>
+				</section>
+				<section>
+					<p>
+						К слову о доказательстве неравенств и об определении знака в неравенстве, определить больше одно число другого, меньше или равно ему, можно используя понятия числел и их визуализаций на координатной прямой (она является наглядным образом множества всех вещественных чисел &reals;).
+					</p>
+					<figure>
+						<img src="greater_than.svg" alt="Визуализация к a больше b на числовой прямой">
+						<figcaption>Иллюстрация к a &gt; b</figcaption>
+					</figure>
+					<p>
+						Пусть <var>a</var> больше <var>b</var>, тогда очевидно, что на координатной (числовой) прямой (обычной, с положительным направлением слева на право) точка, представляющая число <i>a</i>, будет правее точки, представляющей число <i>b</i>. Это значит, что <i>a = b + c</i>, и <i>c</i> является положительным числом (продвижение по числовой прямой вправо соответсвует прибавлению положительного числа). Получается (по определению разности), <i>a-b = c</i>.
+					</p>
+					<figure>
+						<img src="less_than.svg" alt="Визуализация к a меньше b на числовой прямой">
+						<figcaption>Иллюстрация к a &lt; b</figcaption>
+					</figure>
+					<p>
+						Пусть <var>a</var> меньше <var>b</var>, тогда поступаем аналогично - на координатной прямой точка <i>a</i> лежит левее точки <i>b</i>. Значит, также <i>b = a + c</i> (c положиительным <i>c</i>). Следовательно, при вычитании получаем: <i>a-b = -c</i>. Т.е. <i>a-b = p</i>, где p - отрицательное число.
+					</p>
+					Можно на основе этих рассуждений определить:
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mi>a</mi>
+							<mo>&gt;</mo>
+							<mi>b</mi>
+							<mo>&hArr;</mo>
+							<mfenced open="{" close=" " separators=",">
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mi>a</mi>
+												<mo>-</mo>
+												<mi>b</mi>
+												<mo>=</mo>
+												<mi>c</mi>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mi>c</mi>
+												<mo>&gt;</mo>
+												<mn>0</mn>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</mfenced>
+						</mrow>
+					</math>
+					и
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mi>a</mi>
+							<mo>&lt;</mo>
+							<mi>b</mi>
+							<mo>&hArr;</mo>
+							<mfenced open="{" close=" " separators=",">
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mi>a</mi>
+												<mo>-</mo>
+												<mi>b</mi>
+												<mo>=</mo>
+												<mi>c</mi>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mi>c</mi>
+												<mo>&lt;</mo>
+												<mn>0</mn>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</mfenced>
+						</mrow>
+					</math>
+					Также, конечно, равенство определяется так:
+					<math display="block">
+						<mrow>
+							<mi>a</mi>
+							<mo>=</mo>
+							<mi>b</mi>
+							<mo>&hArr;</mo>
+							<mi>a</mi>
+							<mo>-</mo>
+							<mi>b</mi>
+							<mo>=</mo>
+							<mn>0</mn>
+						</mrow>
+					</math>
+					<p>
+						Тогда для нестрогих неравенств знаки сменятся на знаки нестрогого равенства (добавится возможность для <i>c</i> быть равным 0).
+					</p>
+					<p>Подобный способ решения неравенств (где разность чисел сравнивают с нулём) можно называть <i>метод оценки знака разности</i>. Он основан на определениях <i>a&lt;b</i> и <i>a&gt;b</i>, записанных выше.</p>
+				</section>
+				<section>
+					<h2>Свойства неравенств</h2>
+					<ol style="text-align: left;">
+						<li>
+							Если <i>a &ge; b</i>, то <i>b &le; a</i> и наоборот (обратное отношение, которое понятно уже интуитивно).
+							Доказательство: &#x25FD; a &ge; b &rArr; a-b &ge; 0; b-a= -(-b+a) = -(a-b) и (a-b) &ge; 0 &rArr; -(a-b) &et; 0 &rArr; b &et; a Q.E.D. (обратное утверждение и свойство для строгих равенств доказываются аналогично) &#x25FD;
+						</li>
+						<li>
+							Если <i>a &ge; b</i> и <i>b &ge; c</i>, то a &ge; c (<i>свойство транзитивности</i> - один из основных приёмов при работе с неравенствами, равенствами как строгими, так и нестрогими; опять же, интуитивно и известно каждому, можно применять как математическую индукцию и для записи цепочки неравенств). Если хотя бы одно из иначальных условий строгое неравенство, то выводом будет строгое неравенство.
+							Доказательство: <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mo>&#x25FD;</mo>
+									<mspace width="0.5em" />
+									<mi>a</mi>
+									<mo>-</mo>
+									<mi>c</mi>
+									<mo>=</mo>
+									<mi>a</mi>
+									<mo>-</mo>
+									<mi>c</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>=</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>+</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>b</mi>
+											<mo>-</mo>
+											<mi>c</mi>
+										</mrow>
+									</mfenced>
+									<mtext>,</mtext>
+									<mspace width="0.5em" />
+									<mtext>где</mtext>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mspace width="0.5em" />
+									<mtext>(по условию)</mtext>
+									<mspace width="0.5em" />
+									<mtext>и</mtext>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>b</mi>
+											<mo>-</mo>
+											<mi>c</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mspace width="0.5em" />
+									<mtext>(по условию)</mtext>
+									<mspace width="0.5em" />
+									<mo>&rArr;</mo>
+									<mi>a</mi>
+									<mo>-</mo>
+									<mi>c</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mi>a</mi>
+									<mo>-</mo>
+									<mi>c</mi>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mi>a</mi>
+									<mo>&geq;</mo>
+									<mi>c</mi>
+									<mspace width="0.5em" />
+									<mo>&#x25FD;</mo>
+								</mrow>
+							</math>
+							(доказательство для других знаков аналогично; нужно помнить, что равенства - это особый случай нестрогих неравенств).
+						</li>
+						<li>
+							Если <i>a &ge; b</i> и <i>c &isin; &reals;</i>, то <i>a+c &ge; b+c</i> (для неравенств определено и прибавление к, и вычитание из обеих частей; то же для знака меньше и нестрогих неравенств с аналогичным доказательством).
+							Доказательство: <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mo>&#x25FD;</mo>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>+</mo>
+											<mi>c</mi>
+										</mrow>
+									</mfenced>
+									<mo>-</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>b</mi>
+											<mo>+</mo>
+											<mi>c</mi>
+										</mrow>
+									</mfenced>
+									<mo>=</mo>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>c</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>-</mo>
+									<mi>c</mi>
+									<mo>=</mo>
+									<mi>a</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mspace width="0.5em" />
+									<mtext>и</mtext>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>&gt;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>c</mi>
+									<mo>&gt;</mo>
+									<mi>b</mi>
+									<mo>+</mo>
+									<mi>c</mi>
+									<mspace width="0.5em" />
+									<mo>&#x25FD;</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							Если <i>a &ge; b</i> и <i>c &gt; 0</i>, то <i>ac &ge; bc</i> (возможно умножение и деление на ненулевое <i>c</i>; аналогично для других знаков неравенств).
+							Доказательство: <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mo>&#x25FD;</mo>
+									<mspace width="0.5em" />
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>=</mo>
+									<mi>c</mi>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mtext>,</mtext>
+									<mspace width="0.5em" />
+									<mtext>где</mtext>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mspace width="0.5em" />
+									<mtext>и</mtext>
+									<mspace width="0.5em" />
+									<mi>c</mi>
+									<mo>&gt;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>&geq;</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mspace width="0.5em" />
+									<mo>&#x25FD;</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							Если <i>a &ge; b</i> и <i>c &lt; 0</i>, то <i>ac &le; bc</i> (свойство противоположных чисел, например (такое же свойство работает для ненулевых обратных чисел одинакового знака); кроме аналогично для других знаков заменяется на противоположный).
+							Доказательство: <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mo>&#x25FD;</mo>
+									<mspace width="0.5em" />
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>=</mo>
+									<mi>c</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mtext>,</mtext>
+									<mspace width="0.5em" />
+									<mtext>где</mtext>
+									<mspace width="0.5em" />
+									<mi>a</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mspace width="0.5em" />
+									<mtext>и</mtext>
+									<mspace width="0.5em" />
+									<mi>c</mi>
+									<mo>&lt;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>&leq;</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mspace width="0.5em" />
+									<mo>&#x25FD;</mo>
+								</mrow>
+							</math>
+
+						</li>
+						<li>
+							Если <i>a &ge; b</i> и <i>c &ge; d</i>, то <i>a+c &ge; b+d</i> (возможность почленного сложения двух неравенств одинакового смысла; аналогично для других знаков).
+							Доказательсво: <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mo>&#x25FD;</mo>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>+</mo>
+											<mi>c</mi>
+										</mrow>
+									</mfenced>
+									<mo>-</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>b</mi>
+											<mo>+</mo>
+											<mi>d</mi>
+										</mrow>
+									</mfenced>
+									<mo>=</mo>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>c</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>-</mo>
+									<mi>d</mi>
+									<mo>=</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>+</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>c</mi>
+											<mo>-</mo>
+											<mi>d</mi>
+										</mrow>
+									</mfenced>
+									<mtext>,</mtext>
+									<mspace width="0.5em" />
+									<mtext>где</mtext>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mspace width="0.5em" />
+									<mtext>и</mtext>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>c</mi>
+											<mo>-</mo>
+											<mi>d</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>+</mo>
+											<mi>c</mi>
+										</mrow>
+									</mfenced>
+									<mo>-</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>b</mi>
+											<mo>+</mo>
+											<mi>d</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>+</mo>
+											<mi>c</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>b</mi>
+											<mo>+</mo>
+											<mi>d</mi>
+										</mrow>
+									</mfenced>
+									<mspace width="0.5em" />
+									<mo>&#x25FD;</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							Если <i>a &ge; b &gt; 0</i> и <i>c &ge; d &gt; 0</i>, то <i>ac &ge; bd</i> (возможность почленного перемножения двух положительных неравенств одинакового смысла; аналогично можно складывать со всеми знаками: меньше (или равно) и больше).
+							Доказательство: <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mo>&#x25FD;</mo>
+									<mspace width="0.5em" />
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>d</mi>
+									<mo>=</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>d</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>=</mo>
+									<mi>c</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>+</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>c</mi>
+											<mo>-</mo>
+											<mi>d</mi>
+										</mrow>
+									</mfenced>
+									<mtext>,</mtext>
+									<mspace width="0.5em" />
+									<mtext>где</mtext>
+									<mspace width="0.5em" />
+									<mi>c</mi>
+									<mo>&gt;</mo>
+									<mn>0</mn>
+									<mtext>;</mtext>
+									<mspace width="0.5em" />
+									<mi>b</mi>
+									<mo>&gt;</mo>
+									<mn>0</mn>
+									<mtext>;</mtext>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mtext>;</mtext>
+									<mspace width="0.5em" />
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>c</mi>
+											<mo>-</mo>
+											<mi>d</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mi>c</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>-</mo>
+											<mi>b</mi>
+										</mrow>
+									</mfenced>
+									<mo>+</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>c</mi>
+											<mo>-</mo>
+											<mi>d</mi>
+										</mrow>
+									</mfenced>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mo>&rArr;</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>&geq;</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>d</mi>
+									<mspace width="0.5em" />
+									<mo>&#x25FD;</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							Если <i>a &ge; b &gt; 0</i> и <i>n &isin; &naturals;</i>, то <i>a<sup>n</sup> &ge; b<sup>n</sup></i> (как и для всех других правил и свойств, здесь разобранных, знак больше или равно можно заменять на другие; из доказательсва можно увидеть, что обратное тоже верно; см. также <a href="13.html">свойства степеней с целым показателем</a>).
+							Доказательство: <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mo>&#x25FD;</mo>
+									<mspace width="0.5em" />
+									<msup>
+										<mi>a</mi>
+										<mi>n</mi>
+									</msup>
+									<mo>&geq;</mo>
+									<msup>
+										<mi>b</mi>
+										<mi>n</mi>
+									</msup>
+									<mo>&gt;</mo>
+									<mn>0</mn>
+									<mo>&hArr;</mo>
+									<mfenced open="{" close=" " separators=",">
+										<mrow>
+											<mtext>n раз</mtext>
+											<mo>(</mo>
+											<mtable>
+												<mtr>
+													<mtd>
+														<mi>a</mi>
+														<mo>&geq;</mo>
+														<mi>b</mi>
+													</mtd>
+												</mtr>
+												<mtr>
+													<mtd>
+														<mi>a</mi>
+														<mo>&geq;</mo>
+														<mi>b</mi>
+													</mtd>
+												</mtr>
+												<mtr>
+													<mtd>
+														<mo>&hellip;</mo>
+													</mtd>
+												</mtr>
+												<mtr>
+													<mtd>
+														<mi>a</mi>
+														<mo>&geq;</mo>
+														<mi>b</mi>
+													</mtd>
+												</mtr>
+											</mtable>
+											<mo>|</mo>
+											<mo>&lowast;</mo>
+										</mrow>
+									</mfenced>
+									<mover>
+										<mo>&rarr;</mo>
+										<mtext>по свойству 7</mtext>
+									</mover>
+									<mtext>при</mtext>
+									<mspace width="0.5em" />
+									<mi>a</mi>
+									<mo>&geq;</mo>
+									<mi>b</mi>
+									<mo>&gt;</mo>
+									<mn>0</mn>
+									<mspace width="0.5em" />
+									<mtext>и</mtext>
+									<mspace width="0.5em" />
+									<mi>n</mi>
+									<mo>&isin;</mo>
+									<mi>&naturals;</mi>
+									<mspace width="0.5em" />
+									<msup>
+										<mi>a</mi>
+										<mi>n</mi>
+									</msup>
+									<mo>&geq;</mo>
+									<msup>
+										<mi>b</mi>
+										<mi>n</mi>
+									</msup>
+									<mspace width="0.5em" />
+									<mtext>(и наоборот)</mtext>
+									<mspace width="0.5em" />
+									<mo>&#x25FD;</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>
+							Если <i>a<sup>n</sup> &ge; b<sup>n</sup></i> при <i>a &gt; 0</i> и <i>b &gt; 0</i> и <i>n &isin; &naturals;</i>, то <i>a &ge; b</i>.
+							Доказательство: <math>
+								<mrow>
+									<mo>&#x25FD;</mo>
+									<mspace width="0.5em" />
+									<mtext>см. предыдущее доказательство</mtext>
+									<mspace width="0.5em" />
+									<mo>&#x25FD;</mo>
+								</mrow>
+							</math>
+						</li>
+						<li>Два предыдущих свойства были для натуральных степеней, но для дробных степеней тоже есть подобные свойства: см. <a href="6.html">свойства квадратного корня</a> (обратное данной там теореме тоже верно).</li>
+					</ol>
+					Большая часть доказательств здесь приводилась для неравенств со знаком больше или равно, однако, его можно заменить на любой другой (в номере 5 следует после преобразования (умножения) брать противоположный изначальному знак (конечно, знак равно на противоположный менять не следует); также знаки отличные от больше либо равно менять нельзя (там, где используется строго больше 0, остаётся строго больше 0)).
+					<p>
+						Вообще, здесь нужно сказать о том, что в общем случае при применении монотонной функции к обеим частям неравенства, если она возрастающая, то неравенсво держится, иначе, неравенсво меняет знак на противоположный. В свойствах примером этой смены знака были обратные и противоположные числа для положительных a и b (<i>&fnof;(<var>x</var>)=-<var>x</var></i> и <i>g(<var>x</var>)=1/<var>x</var></i>). Поэтому, на самом деле, возведение в натуральную степень - это строго возрастающая функция, а возведение в отрицательную целую - это строго убывающая функция (подподающие под данное здесь правило). Хотя, конечно, со многим из этого и из свойств есть сложности, поэтому лучше всего применять всё это для положительных чисел.
+					</p>
+					<p>
+						Также допустим при <a href="7.html">решении квадратных уравнений</a>, а точнее при <a href="8.html">определении дискриминанта квадратного трёхчлена и оценке корней по нему</a>, были упомянуты комплексные числа. Для комплексных чисел нельзя определить соотношение <i>&le;</i> так, чтобы их поле стало упорядоченным.
+					</p>
+					Также при работе с неравенствами можно пользоваться некоторыми <a href="11.html">опорными неравенствами</a>, числовыми осями. Неравенства задают <a href="12.html">числовые промежутки своими системами</a>.
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>
