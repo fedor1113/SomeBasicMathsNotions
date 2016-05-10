@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Квадратный корень. Арифметический квадратный корень. Понятие об иррациональном числе.</h1>
+		</header>
+		<main>
+			<article>
+				<section>
+					<h2>Квадратный корень, применяемый для решения уравнений (алгебраический)</h2>
+					<figure>
+						<img src="Wikipedia/Square%20root%20function:%20y=%E2%88%9Ax.svg" alt="Визуализация квадратного корня Wikipedia">
+						<figcaption>Визуализация квадратного корня в прямоугольной системе координат из Wikipedia</figcaption>
+					</figure>
+					<p><dfn title="алгебраический квадратный корень">Квадратный корень</dfn> - это корень 2-ой степени, решение уравнения x&sup2; = a, т.е. квадратный корень из числа - это число, которое в квадрате (2-ой степени - см. <a href="13.html">свойства и определение степени</a>) даёт исходное подкоренной выражение. Записывается: <i>&radic;x</i>. Операцию по нахождению квадратного корня называют его <i>извлечением</i>. Корень, применяемый для решения <a href="7.html">квадратных уравнений</a> имеет два противоположных значения.</p>
+					Например, найдём корни уравнения x&sup2; = 16: x = &radic;16 &rArr;
+					<math display="inline">
+					<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mfenced open="[" close=" " separators=",">
+								<mrow>
+									<mtable  columnalign="left">
+										<mtr>
+											<mtd>
+												<mi>x</mi>
+												<mo>=</mo>
+												<mn>4</mn>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mi>x</mi>
+												<mo>=</mo>
+												<mo>-</mo>
+												<mn>4</mn>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</mfenced>
+						</mrow>
+					</math>
+					<p>
+						Корни чётной степени определены, вообще говоря, неоднозначно, и этот факт создаёт неудобства при их использовании.
+					</p>
+				</section>
+				<section>
+					<h2>Арифметический квадратный корень</h2>
+					<figure>
+						<img src="Square_root_function.svg" alt="График функции арифметического квадратного корня">
+						<figcaption>График функции арифметического квадратного корня</figcaption>
+					</figure>
+					<p>
+						Чтобы сделать значение корня однозначным в математике вводится понятие арифметических корней.  Арифметический квадратный корень обозначается также как и обычный (алгебраический) - знаком радикала. Таким образом, арифметический корень, в отличие от ранее определённого (алгебраического), определяется только для неотрицательных вещественных чисел, а его значение всегда существует, однозначно и неотрицательно. Например, квадратный корень из числа 4 имеет два значения: 2 и -2, из них арифметическим является первое.</p>
+					<p>
+						Проще говоря, <dfn title="арифметический квадратный корень из числа m">арифметическим квадратным корнем из числа m</dfn> называется неотрицательное число, квадрат которого равен m.
+					</p>
+					<p>
+						Арифметический корень имеет <a href="5.html">ряд полезных свойств</a>. Его подкоренное выражение не может являться отрицательным, иначе запись не будет иметь смысла.
+					</p>
+				</section>
+				<section>
+					<p>
+						Следует упомянуть о геометрическом значении извлечения квадратного корня: это нахождение стороны квадрата по его известной площади.
+					</p>
+				</section>
+				<section>
+					<p>
+						Итак, как видно из текста выше, есть два конфликтующих определения квадратного корня, которые люди подразумевают под этим словосочетанием в определённых контекстах, и их очень важно различать. Так, при решении уравнений люди имеют в виду первое определение, а если корень уже присутствует в уравнении, то это второе определение. Вообще при однозначности, работе с функциями да и чаще всего имеется в виду (так удобнее) арифметический квадратный корень.
+					</p>
+				</section>
+				<hr>
+				<section>
+					<figure>
+						<img src="Wikipedia/Square_root_of_2.svg" alt="Геометрическое представление корня из 2 - Wikipedia">
+						<figcaption>Геометрическое представление &radic;2 (взято из Wikipedia)</figcaption>
+					</figure>
+					<p>
+						При обсуждении квадратного корня имеет смысл затронуть тему иррациональных чисел, так как корень из большей части чисел будет именно иррациональным.
+					</p>
+					<p>
+						<dfn>Иррациональное число</dfn> - это действительное число за пределами поля рациональных чисел, иначе, число, которое нельзя представить в виде обыкновенной дроби m/n, где числитель - целое число, а знаменатель - натуральное. Поэтому при десятичной записи иррациональные числа не заканчиваются, а их дробная часть - не переодична. Необходимо также добавить, что большая часть действительных чисел (почти все) иррациональна (это вытекает из принципа Кантора, его диагонального метода, и нескольких теорем). В отличие от остальных числовых множеств, множество иррациональных чисел не имеет общепринятого обозначения; однако, иногда его можно обозначить так:
+						<math display="inline">
+							<mrow>
+								<mover accent="true">
+									<mi>&rationals;</mi>
+									<mo>&macr;</mo>
+								</mover>
+								<mo>=</mo>
+								<mi>&reals;</mi>
+								<mo>&setmn;</mo>
+								<mi>&rationals;</mi>
+							</mrow>
+						</math>.
+					</p>
+					<p>
+						Квадратные корни всех натуральных чисел кроме <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%B2%D0%B0%D0%B4%D1%80%D0%B0%D1%82%D0%BD%D0%BE%D0%B5_%D1%87%D0%B8%D1%81%D0%BB%D0%BE">точных квадратов</a> являются иррациональными.
+					</p>
+					Докажем теперь иррациональность корня из 2 (&radic;2).<br>
+					Доказательство.<br>
+					Воспользуемся методом от противного:
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mtable  columnalign="left" groupalign="{left left}">
+								<mtr>
+									<mtd><maligngroup/>
+										<mo>&#x25FD;</mo>
+										<mtext>Пусть</mtext>
+										<mspace width="0.5em" />
+										<msqrt>
+											<mi>x</mi>
+										</msqrt>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<mi>m</mi>
+											</mrow>
+											<mrow>
+												<mi>n</mi>
+											</mrow>
+										</mfrac>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>2</mn>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<msup>
+													<mi>m</mi>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+											<mrow>
+												<msup>
+													<mi>n</mi>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+										</mfrac>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msup>
+											<mi>m</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>=</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>n</mi>
+											<mn>2</mn>
+										</msup>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msup>
+											<mi>m</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>|</mo>
+										<mn>2</mn>
+										<mo>&rArr;</mo>
+										<mi>m</mi>
+										<mo>|</mo>
+										<mn>2</mn>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mtext>Можно представить</mtext>
+										<mspace width="0.5em" />
+										<mi>m</mi>
+										<mo>=</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>k</mi>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mtext>Тогда</mtext>
+										<mspace width="0.5em" />
+										<mn>4</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>k</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>=</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>n</mi>
+											<mn>2</mn>
+										</msup>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>2</mn>
+										<msup>
+											<mi>k</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>=</mo>
+										<msup>
+											<mi>n</mi>
+											<mn>2</mn>
+										</msup>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msup>
+											<mi>n</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>|</mo>
+										<mn>2</mn>
+										<mo>&rArr;</mo>
+										<mi>n</mi>
+										<mo>|</mo>
+										<mn>2</mn>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mi>n</mi>
+										<mtext>,</mtext>
+										<mi>m</mi>
+										<mo>|</mo>
+										<mn>2</mn>
+										<maligngroup/>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mo>&therefore;</mo>
+										<mfrac>
+											<mrow>
+												<mi>m</mi>
+											</mrow>
+											<mrow>
+												<mi>n</mi>
+											</mrow>
+										</mfrac>
+										<mo>=</mo>
+										<mfrac>
+											<mrow>
+												<mn>2</mn>
+												<mo>&InvisibleTimes;</mo>
+												<mi>k</mi>
+											</mrow>
+											<mrow>
+												<mn>2</mn>
+												<mo>&InvisibleTimes;</mo>
+												<mi>b</mi>
+											</mrow>
+										</mfrac>
+										<mo>&therefore;</mo>
+										<msqrt>
+											<mn>2</mn>
+										</msqrt>
+										<mspace width="0.5em" />
+										<mtext>нельзя представить в виде</mtext>
+										<maligngroup/>
+										<mfrac>
+											<mrow>
+												<mi>m</mi>
+											</mrow>
+											<mrow>
+												<mi>n</mi>
+											</mrow>
+										</mfrac>
+										<mo>&#x25FD;</mo>
+									</mtd>
+								</mtr>
+							</mtable>
+						</mrow>
+					</math>
+					<p>
+						Так как точное значение корней из не квадратов в привычном виде не записать, следует иметь представление об <a href="6.html">их приблежённом значении</a>.
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>

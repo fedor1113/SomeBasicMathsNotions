@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Алгебраическая дробь. Основное свойство дроби. Сокращение дробей. Приведение дробей к общему знаменатлю. Сложение и вычитание алгебраических дробей. Умножение дробей. Возведение дроби в степень. Деление дробей.</h1>
+		</header>
+		<main>
+			<article>
+				<p>
+					Дробь - есть чило вида <math display="inline"><mrow><mfrac><mrow><mi>a</mi></mrow><mrow><mi>b</mi></mrow></mfrac></mrow></math>, где a - целое число, и b - натуральное число. Также и алгебраическая дробь - число вида <math display="inline"><mrow><mfrac><mrow><mi>P</mi></mrow><mrow><mi>Q</mi></mrow></mfrac></mrow></math>, где P и Q - многочлены, и P является знаменатилем, а Q -  числителем дроби. Является частным случаем <a href="1.html">рационального выражения</a>.
+					Пример дроби алгебраической дроби:
+					<math display="inline">
+						<mrow>
+							<mfrac>
+								<mrow>
+									<msup>
+										<mi>y</mi>
+										<mn>2</mn>
+									</msup>
+									<mo>-</mo>
+									<mn>1</mn>
+								</mrow>
+								<mrow>
+									<mi>y</mi>
+									<mo>-</mo>
+									<mn>1</mn>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
+				</p>
+				Смотреть также <a href="1.html">деление многочленов</a>.
+				<section>
+					<h2>Основное свойство дроби</h2>
+					<p>Пожалуй, самым важным свойством дроби является записанное ниже. Именно оно позволяет проделывать практически любые известные операции и преобразования над дробями.</p>
+					<p>Свойство: если умножить или разделить числитель и знаменатель дроби на одно и то же число (отличное от 0), то значение дроби не изменится.</p>
+					<p>Иначе говоря:
+						<math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+									</mrow>
+									<mrow>
+										<mi>b</mi>
+									</mrow>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+										<mo>&times;</mo>
+										<mi>n</mi>
+									</mrow>
+									<mrow>
+										<mi>b</mi>
+										<mo>&times;</mo>
+										<mi>n</mi>
+									</mrow>
+								</mfrac>
+								<mo>&forall;</mo>
+								<mi>n</mi>
+								<mo>&ne;</mo>
+								<mn>0</mn>
+							</mrow>
+						</math>
+					.</p>
+					<p>То же, очевидно, применимо и к алгебраическим дробям, т. к. ясно, что умножение числителя и знаменателя на одно и то же число эквивалентно умножению числа на число, а потом делению на то же число, что является взаимно-обратными действиями &there4; взаимно уничтожают друг друга. Конечно, применение этого свойства к алгебраическим дробям является их тождественным преобразованием, что важно &there4; этим свойством всегда можно спокойно пользоваться.</p>
+				</section>
+				<section>
+					<h3>Сокращение дробей</h3>
+					<p>Важным вытекающим из основного свойства алгебраической дроби является возможность её сокращения, т.е. деление числителя и знаменателя на число.</p>
+					Пример:
+					<math display="block">
+						<mrow>
+							<mfrac>
+								<mrow>
+									<msup>
+										<mi>x</mi>
+										<mn>2</mn>
+									</msup>
+									<mo>-</mo>
+									<mi>x</mi>
+								</mrow>
+								<mrow>
+									<msup>
+										<mi>x</mi>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<msup>
+												<mi>x</mi>
+												<mn>2</mn>
+											</msup>
+											<mo>-</mo>
+											<mi>x</mi>
+										</mrow>
+									</mfenced>
+									<mo>/</mo>
+									<mi>x</mi>
+								</mrow>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<msup>
+												<mi>x</mi>
+												<mn>2</mn>
+											</msup>
+										</mrow>
+									</mfenced>
+									<mo>/</mo>
+									<mi>x</mi>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<mi>x</mi>
+									<mo>-</mo>
+									<mn>1</mn>
+								</mrow>
+								<mrow>
+									<mi>x</mi>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
+				</section>
+				<section>
+					<h3>Приведение дробей к общему знаменатлю</h3>
+					<p>Алгебраические дроби (как и обычные) можно привести к общему знаменателю, используя основное свойство.</p>
+				</section>
+				<section>
+					<h3>Сложение и вычитание алгебраических дробей</h3>
+					<p>
+						Приведя, дроби к общему знаменателю, их можно складывать и вычетать.
+						<math display="inline">
+							<mrow>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+									</mrow>
+									<mrow>
+										<mi>c</mi>
+									</mrow>
+								</mfrac>
+								<mo>+</mo>
+								<mfrac>
+									<mrow>
+										<mi>b</mi>
+									</mrow>
+									<mrow>
+										<mi>c</mi>
+									</mrow>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+										<mo>+</mo>
+										<mi>b</mi>
+									</mrow>
+									<mrow>
+										<mi>c</mi>
+									</mrow>
+								</mfrac>
+							</mrow>
+						</math>
+					</p>
+				</section>
+				<section>
+					<h3>Умножение дробей</h3>
+					<p>
+						Умножать дроби очень легко, перемножая числитель с числителем и знаменатель с знаменателем.
+						<math display="inline">
+							<mrow>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+									</mrow>
+									<mrow>
+										<mi>b</mi>
+									</mrow>
+								</mfrac>
+								<mo>&times;</mo>
+								<mfrac>
+									<mrow>
+										<mi>c</mi>
+									</mrow>
+									<mrow>
+										<mi>n</mi>
+									</mrow>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+									</mrow>
+									<mrow>
+										<mi>b</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>n</mi>
+									</mrow>
+								</mfrac>
+							</mrow>
+						</math>
+					</p>
+				</section>
+				<section>
+					<h3>Возведение дроби в степень</h3>
+					<p>
+						Последовательное умножение дроби саму на себя - возведение в степень. Оно также возможно. Как именно возводить дробь в n-ую степень легко понять, пользуясь правилом умножения дробей (возведение в степень есть последовотельное умножение числа, переменной, многочлена самого на себя).
+						<math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<msup>
+									<mrow>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<mfrac>
+													<mrow>
+														<mi>a</mi>
+													</mrow>
+													<mrow>
+														<mi>b</mi>
+													</mrow>
+												</mfrac>
+											</mrow>
+										</mfenced>
+									</mrow>
+									<mi>n</mi>
+								</msup>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<msup>
+											<mi>a</mi>
+											<mi>n</mi>
+										</msup>
+									</mrow>
+									<mrow>
+										<msup>
+											<mi>b</mi>
+											<mi>n</mi>
+										</msup>
+									</mrow>
+								</mfrac>
+							</mrow>
+						</math>
+					</p>
+				</section>
+				<section>
+					<h3>Деление дробей</h3>
+					<p>
+						Делить дроби тоже можно. Деление на дробь эквивалентно умножению на ту же дробь, где числитель и знаменатель поменяли местами. Деление на дробь - это умножение на дробь ей обратную.
+						<math display="inline">
+							<mrow>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+									</mrow>
+									<mrow>
+										<mi>c</mi>
+									</mrow>
+								</mfrac>
+								<mo>&div;</mo>
+								<mfrac>
+									<mrow>
+										<mi>b</mi>
+									</mrow>
+									<mrow>
+										<mi>d</mi>
+									</mrow>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+									</mrow>
+									<mrow>
+										<mi>c</mi>
+									</mrow>
+								</mfrac>
+								<mo>&times;</mo>
+								<mfrac>
+									<mrow>
+										<mi>d</mi>
+									</mrow>
+									<mrow>
+										<mi>b</mi>
+									</mrow>
+								</mfrac>
+							</mrow>
+						</math>
+					</p>
+				</section>
+				<section>
+					<p>
+						При работе с рациональными дробями не обязательно обращаться к математическим выражениям другого рода, так как результаты всех перечисленных выше действий можно представить в виде рациональной дроби (что  выше и показано).
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>

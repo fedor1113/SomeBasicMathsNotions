@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Нахождение приближённого значения квадратного корня. Метод оценки велечины квадратного корня.</h1>
+		</header>
+		<main>
+			<article>
+				<section>
+					<p>
+						Квадратные корни <a href="4.html">по большей части иррациональны</a>, поэтому как и все иррациональные числа их нельзя в точности записать, да и просто найти или представить их значение (хоть приближённое) не так просто. Однако, при работе с ними это, очевидно, необходимо, т.к. просто математический символ, не имеющий смысла ничего не даёт. Поэтому это бывает нужно (и даже часто) при решении задач, уравнений, использовании теоремы Пифагора (самый известный пример) с иррациональным корнями и решении неравенств.
+					</p>
+					<p>Есть несколько методов для оценки величины квадратного корня, и часть из них перечислена ниже.</p>
+				</section>
+				<section>
+					<p>
+						Вообще, для работы с любыми корнями с чётным показателем полезна эта достаточно интуитивная теорема: если a > b > 0, то &radic;a > &radic;b (см. также <a href="5.html">свойства арифметического квадратного корня</a>). Докажим это.
+					</p>
+					Доказательство.<br>
+					<math display="block">
+						<mrow>
+							<mo>&#x25FD;</mo>
+							<mtext>Предположим,</mtext>
+							<mspace width="0.5em" />
+							<msqrt>
+								<mi>a</mi>
+							</msqrt>
+							<mo>&ngt;</mo>
+							<msqrt>
+								<mi>b</mi>
+							</msqrt>
+							<mo>&rArr;</mo>
+							<msqrt>
+								<mi>a</mi>
+							</msqrt>
+							<mo>&le;</mo>
+							<msqrt>
+								<mi>b</mi>
+							</msqrt>
+							<mtext>.</mtext>
+							<mspace width="0.5em" />
+							<mtext>Пусть</mtext>
+							<mspace width="0.5em" />
+							<msqrt>
+								<mi>a</mi>
+							</msqrt>
+							<mo>=</mo>
+							<msqrt>
+								<mi>b</mi>
+							</msqrt>
+							<mtext>.</mtext>
+							<mspace width="0.5em" />
+							<mtext>Тогда</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<msqrt>
+												<mi>a</mi>
+											</msqrt>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<msqrt>
+												<mi>b</mi>
+											</msqrt>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>&rArr;</mo>
+							<mi>a</mi>
+							<mo>=</mo>
+							<mi>b</mi>
+							<mo>&therefore;</mo>
+							<mtext>Есть противоречие.</mtext>
+							<mspace width="0.5em" />
+							<mspace width="0.5em" />
+							<mtext>Пусть</mtext>
+							<mspace width="0.5em" />
+							<msqrt>
+								<mi>a</mi>
+							</msqrt>
+							<mo>&lt;</mo>
+							<msqrt>
+								<mi>b</mi>
+							</msqrt>
+							<mtext>.</mtext>
+							<mspace width="0.5em" />
+							<mtext>Тогда</mtext>
+							<mspace width="0.5em" />
+							<mo>&because;</mo>
+							<mfenced open="{" close=" " separators=",">
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<msqrt>
+													<mi>a</mi>
+												</msqrt>
+												<mo>&gt;</mo>
+												<mn>0</mn>
+											</mtd>
+											<mtd>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<msqrt>
+													<mi>b</mi>
+												</msqrt>
+												<mo>&gt;</mo>
+												<mn>0</mn>
+											</mtd>
+											<mtd>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</mfenced>
+							<mo>&therefore;</mo>
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<msqrt>
+												<mi>a</mi>
+											</msqrt>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>&lt;</mo>
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<msqrt>
+												<mi>b</mi>
+											</msqrt>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>&rArr;</mo>
+							<mi>a</mi>
+							<mo>&lt;</mo>
+							<mi>b</mi>
+							<mo>&therefore;</mo>
+							<mtext>Есть противоречие.</mtext>
+							<mo>&therefore;</mo>
+							<mi>a</mi>
+							<mo>&nle;</mo>
+							<mi>b</mi>
+							<mo>&rArr;</mo>
+							<mi>a</mi>
+							<mo>&gt;</mo>
+							<mi>b</mi>
+							<mo>&#x25FD;</mo>
+						</mrow>
+					</math>
+				</section>
+				<section>
+					<p>
+						Теперь, используя одну лишь эту теорему, можно найти значение квадратного корня с точностью в любое количество знаков после запятой.
+					</p>
+					<p>
+						Так как <a href="4.html">для &radic;2 здесь уже было доказано, что это - иррациональное число</a>, и он является самым маленьким иррациональным корнем из натурального числа, то можно именно на его примере испытать метод оценки велечины.
+					</p>
+					<p>
+						Сначала найдём два последовательных натуральных числа, в промежутке между которыми заключено значение &radic;2.
+						Очевидно, 1&sup2; &lt; &radic;2 &lt; 2&sup2;
+					</p>
+					<math display="block">
+						<mrow>
+							<msup>
+								<mn>1</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&lt;</mo>
+							<mn>2</mn>
+							<mo>&lt;</mo>
+							<msup>
+								<mn>2</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&rArr;</mo>
+							<mn>1</mn>
+							<mo>&lt;</mo>
+							<msqrt>
+								<mn>2</mn>
+							</msqrt>
+							<mo>&lt;</mo>
+							<mn>2</mn>
+						</mrow>
+					</math>
+					Далее, начиная с 1 + 0.1, следует возводить числа 1.1, 1.2, 1.3,...1.9 в квадрат, пока не найдётся число, большее 2...
+					<math display="block">
+						<mrow>
+							<msup>
+								<mn>1.1</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.21</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.2</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<msup>
+								<mn>1.44</mn>
+								<mn>2</mn>
+							</msup>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.3</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.69</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.4</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.96</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.5</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>2.25</mn>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.5</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&gt;</mo>
+							<mn>2</mn>
+							<mo>&rArr;</mo>
+							<msup>
+								<mn>1.4</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&lt;</mo>
+							<mn>2</mn>
+							<mo>&lt;</mo>
+							<msup>
+								<mn>1.5</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&rArr;</mo>
+							<mn>1.4</mn>
+							<mo>&lt;</mo>
+							<msqrt>
+								<mn>2</mn>
+							</msqrt>
+							<mo>&lt;</mo>
+							<mn>1.5</mn>
+						</mrow>
+					</math>
+					<p>
+						Итак, 1,4 и 1,5 - это приближённые значения корня из двух с недостатком и с избытком.
+					</p>
+					Теперь, чтобы найти более точное значение, следует поступить также с числами вида 1.4x, пока не встретится число, большее 2 и т.д.
+					<math display="block">
+						<mrow>
+							<msup>
+								<mn>1.41</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.9881</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.42</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>2.0164</mn>
+							<mtext>,</mtext>
+							<mspace width="0.5em" />
+							<mtext>т.е.</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.41</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&lt;</mo>
+							<mn>2</mn>
+							<mo>&lt;</mo>
+							<msup>
+								<mn>1.42</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&rArr;</mo>
+							<mn>1.41</mn>
+							<mo>&lt;</mo>
+							<msqrt>
+								<mn>2</mn>
+							</msqrt>
+							<mo>&lt;</mo>
+							<mn>1.42</mn>
+							<mtext>.</mtext>
+							<mspace width="0.5em" />
+							<mtext>Далее</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.411</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.990921</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.412</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.993744</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.413</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.996569</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.414</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.999396</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.415</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>2.002225</mn>
+							<mtext>,</mtext>
+							<mspace width="0.5em" />
+							<mtext>т.е.</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.414</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&lt;</mo>
+							<mn>2</mn>
+							<mo>&lt;</mo>
+							<msup>
+								<mn>1.415</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&rArr;</mo>
+							<mn>1.414</mn>
+							<mo>&lt;</mo>
+							<msqrt>
+								<mn>2</mn>
+							</msqrt>
+							<mo>&lt;</mo>
+							<mn>1.415</mn>
+							<mtext>.</mtext>
+							<mspace width="0.5em" />
+							<mtext>Далее</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mtext>1.4141</mtext>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.99967881</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.4142</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.99996164</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.4143</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>2.00024449</mn>
+							<mspace width="0.5em" />
+							<mtext>т.е.</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.4142</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&lt;</mo>
+							<mn>2</mn>
+							<mo>&lt;</mo>
+							<msup>
+								<mn>1.4143</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&rArr;</mo>
+							<mn>1.4142</mn>
+							<mo>&lt;</mo>
+							<msqrt>
+								<mn>2</mn>
+							</msqrt>
+							<mo>&lt;</mo>
+							<mn>1.4143</mn>
+							<mtext>.</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.41421</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>1.999989924</mn>
+							<mtext>;</mtext>
+							<msup>
+								<mrow>
+									<mspace width="0.5em" />
+									<mn>1.41422</mn>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>=</mo>
+							<mn>2.000018208</mn>
+							<mtext>,</mtext>
+							<mspace width="0.5em" />
+							<mtext>т.е.</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mn>1.41421</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&lt;</mo>
+							<mn>2</mn>
+							<mo>&lt;</mo>
+							<msup>
+								<mn>1.41422</mn>
+								<mn>2</mn>
+							</msup>
+							<mo>&rArr;</mo>
+							<mn>1.41421</mn>
+							<mo>&lt;</mo>
+							<msqrt>
+								<mn>2</mn>
+							</msqrt>
+							<mo>&lt;</mo>
+							<mn>1.41422</mn>
+							<mtext>...</mtext>
+							<mspace width="0.5em" />
+							<mo>&therefore;</mo>
+							<msqrt>
+								<mn>2</mn>
+							</msqrt>
+							<mo>=</mo>
+							<mn>1.41421...</mn>
+						</mrow>
+					</math>
+				</section>
+				<section>
+					<p>
+						Есть и другие методы и приёмы для нахождения приближённого значения квадратного корня с заданной точностью, но из-за специфики иррациональных чисел все эти методы также достаточно трудоёмки.
+					</p>
+					<p>
+						При нахождении приближённого значения корней, следует помнить о разложении на множители и <a href="4.html">о свойствах арифметического квадратного корня</a>.
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>

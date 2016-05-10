@@ -1,0 +1,1724 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Неравенства, связывающие среднее арифметическое и среднее геометрическое двух неотрицательных чисел. Простейшие неравенства с модулем, их геометрическая интерпритация.</h1>
+		</header>
+		<main>
+			<article>
+				<section>
+					<h2>Опорные неравенства</h2>
+					<p>
+						<a href="10.html">При доказательстве и решении неравенств</a> есть множество разных нюансов, теорем и часто используемых (опорных) неравенств. И верно: допустим, неравенство <i>|x|&lt;a</i>, где a&ge;0, применяется очень часто, и необходимо понимать, что оно из себя представляет, и как раскрыть модуль, но об этом позже.
+					</p>
+					<p>
+						Смысл в том, что при решении неравенств есть некоторые полезные соотношения, которые неплохо знать заранее, и на которые можно опереться при определении знака в неравенстве и т.д. - их тогда условно можно называть <i>опорные неравенста</i>. Итак, есть большое количество достаточно известных неравенств, таких как неравенства, связывающие средние.
+					</p>
+					<p>
+						Именно при сравнении двух чисел и средних двух чисел достаточно интересны и просты в доказательстве, например, неравенства, связывающие среднее арифметическое, среднее геометрическое и среднее гармоническое двух неотрицательных чисел. Они, очевидно, является частным случаем теоремы о средних (иногда называют неравенством Коши, но этот термин имеет несколько значений и может быть понят по-разному). Вообще, с названием этих опорных неравенств есть некоторая путаница (поэтому лучше напрямую говорить само рассматриваемое неравенство).
+					</p>
+					Три средних, о которых говорилось выше, связаны данной цепочкой неравенств:
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mfrac>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+								<mrow>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<mi>a</mi>
+										</mrow>
+									</mfrac>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<mi>b</mi>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</mfrac>
+							<mo>&le;</mo>
+							<msqrt>
+								<mi>a</mi>
+								<mo>&InvisibleTimes;</mo>
+								<mi>b</mi>
+							</msqrt>
+							<mo>&le;</mo>
+							<mfrac>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
+					Начну с доказательства <math display="inline">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msqrt>
+								<mi>a</mi>
+								<mo>&times;</mo>
+								<mi>b</mi>
+							</msqrt>
+							<mo>&geq;</mo>
+							<mfrac>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+								<mrow>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<mi>a</mi>
+										</mrow>
+									</mfrac>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<mi>b</mi>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
+					Для доказательства можно воспользоватся <a href="10.html">методом оценки знака разности</a> (рассматривается для положительных <i>a</i> и <i>b</i>; на самом деле, не все средние могут быть заданы для отрицательных чисел и нуля, что можно понять уже по их формулам, поэтому говоря о подобном неравенстве следует явно говорить лишь о положительных числах).
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mo>&#x25FD;</mo>
+							<msqrt>
+								<mi>a</mi>
+								<mo>&InvisibleTimes;</mo>
+								<mi>b</mi>
+							</msqrt>
+							<mo>-</mo>
+							<mfrac>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+								<mrow>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<mi>a</mi>
+										</mrow>
+									</mfrac>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<mi>b</mi>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<msqrt>
+								<mi>a</mi>
+								<mo>&InvisibleTimes;</mo>
+								<mi>b</mi>
+							</msqrt>
+							<mo>-</mo>
+							<mfrac>
+								<mrow>
+									<mn>2</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<msqrt>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>b</mi>
+									</msqrt>
+									<mo>+</mo>
+									<mi>b</mi>
+									<mo>&InvisibleTimes;</mo>
+									<msqrt>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>b</mi>
+									</msqrt>
+									<mo>-</mo>
+									<mn>2</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<msqrt>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>b</mi>
+									</msqrt>
+									<mo>&InvisibleTimes;</mo>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>a</mi>
+											<mo>+</mo>
+											<mi>b</mi>
+											<mo>-</mo>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<msqrt>
+												<mi>a</mi>
+												<mo>&InvisibleTimes;</mo>
+												<mi>b</mi>
+											</msqrt>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<msqrt>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>b</mi>
+									</msqrt>
+									<mo>&InvisibleTimes;</mo>
+									<msup>
+										<mrow>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<msqrt>
+														<mi>a</mi>
+													</msqrt>
+													<mo>-</mo>
+													<msqrt>
+														<mi>b</mi>
+													</msqrt>
+												</mrow>
+											</mfenced>
+										</mrow>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+							</mfrac>
+							<mtext>,</mtext>
+							<mspace width="0.5em" />
+							<mtext>где</mtext>
+							<mspace width="0.5em" />
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+							</mfenced>
+							<mo>&gt;</mo>
+							<mn>0</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msqrt>
+								<mi>a</mi>
+								<mo>&InvisibleTimes;</mo>
+								<mi>b</mi>
+							</msqrt>
+							<mo>&gt;</mo>
+							<mn>0</mn>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<msqrt>
+												<mi>a</mi>
+											</msqrt>
+											<mo>-</mo>
+											<msqrt>
+												<mi>b</mi>
+											</msqrt>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>&geq;</mo>
+							<mn>0</mn>
+							<mspace width="0.5em" />
+							<mtext>(всегда - как квадрат)</mtext>
+							<mspace width="0.5em" />
+							<mo>&therefore;</mo>
+							<mtext>всё выражение больше или равно 0</mtext>
+							<mo>&#x25FD;</mo>
+						</mrow>
+					</math>
+					Теперь можно доказать <math display="inline">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msqrt>
+								<mi>a</mi>
+								<mo>&InvisibleTimes;</mo>
+								<mi>b</mi>
+							</msqrt>
+							<mo>&le;</mo>
+							<mfrac>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mo>&#x25FD;</mo>
+							<msqrt>
+								<mi>a</mi>
+								<mo>&InvisibleTimes;</mo>
+								<mi>b</mi>
+							</msqrt>
+							<mo>-</mo>
+							<mfrac>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<mn>2</mn>
+									<mo>&InvisibleTimes;</mo>
+									<msqrt>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>b</mi>
+									</msqrt>
+									<mo>-</mo>
+									<mi>a</mi>
+									<mo>-</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mo>-</mo>
+							<mfrac>
+								<mrow>
+									<msup>
+										<mrow>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<msqrt>
+														<mi>a</mi>
+													</msqrt>
+													<mo>-</mo>
+													<msqrt>
+														<mi>b</mi>
+													</msqrt>
+												</mrow>
+											</mfenced>
+										</mrow>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+							<mspace width="0.5em" />
+							<mtext>выражение меньше или равно 0</mtext>
+							<mo>&#x25FD;</mo>
+						</mrow>
+					</math>
+					Далее это неравенство можно расширить, добавив, допустим, среднее квадратическое. Можно тогда доказать <math display="inline">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msqrt>
+								<mfrac>
+									<mrow>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<msup>
+											<mi>b</mi>
+											<mn>2</mn>
+										</msup>
+									</mrow>
+									<mrow>
+										<mn>2</mn>
+									</mrow>
+								</mfrac>
+							</msqrt>
+							<mo>&geq;</mo>
+							<mfrac>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
+					Можно опять воспользоваться методом оценки знака разности, но с небольшим изменением, так как, чтобы оценить числитель получившегося выражения, потребуется сравнить два других, из которого оно состоит, чтобы понять знак.
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msqrt>
+								<mfrac>
+									<mrow>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<msup>
+											<mi>b</mi>
+											<mn>2</mn>
+										</msup>
+									</mrow>
+									<mrow>
+										<mn>2</mn>
+									</mrow>
+								</mfrac>
+							</msqrt>
+							<mo>-</mo>
+							<mfrac>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<msqrt>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<msup>
+											<mi>b</mi>
+											<mn>2</mn>
+										</msup>
+									</msqrt>
+								</mrow>
+								<mrow>
+									<msqrt>
+										<mn>2</mn>
+									</msqrt>
+								</mrow>
+							</mfrac>
+							<mo>-</mo>
+							<mfrac>
+								<mrow>
+									<msqrt>
+										<mi>a</mi>
+										<mo>+</mo>
+										<mi>b</mi>
+									</msqrt>
+									<mo>&times;</mo>
+									<msqrt>
+										<mi>a</mi>
+										<mo>+</mo>
+										<mi>b</mi>
+									</msqrt>
+								</mrow>
+								<mrow>
+									<msqrt>
+										<mn>2</mn>
+									</msqrt>
+									<mo>&times;</mo>
+									<msqrt>
+										<mn>2</mn>
+									</msqrt>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<msqrt>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msup>
+													<mi>a</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<msup>
+													<mi>b</mi>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+										</mfenced>
+									</msqrt>
+									<mo>-</mo>
+									<msqrt>
+										<mi>a</mi>
+										<mo>+</mo>
+										<mi>b</mi>
+									</msqrt>
+									<mo>&InvisibleTimes;</mo>
+									<msqrt>
+										<mi>a</mi>
+										<mo>+</mo>
+										<mi>b</mi>
+									</msqrt>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+							<mspace width="0.5em" />
+							<mtext>рассмотрим числитель отдельно...</mtext>
+						</mrow>
+					</math>
+					Теперь, чтобы доказать, что разность больше нуля, нужно сравнивать уменьшаемое и вычитаемое (первое, соответственно, должно быть больше другого).
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mtable groupalign="{left}">
+								<mtr>
+									<mtd><maligngroup/>
+										<mo>&#x25FD;</mo>
+										<msqrt>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<msup>
+														<mi>a</mi>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<msup>
+														<mi>b</mi>
+														<mn>2</mn>
+													</msup>
+												</mrow>
+											</mfenced>
+										</msqrt>
+										<mo>&or;</mo>
+										<msup>
+											<mrow>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<msqrt>
+															<mi>a</mi>
+															<mo>+</mo>
+															<mi>b</mi>
+														</msqrt>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mn>2</mn>
+										</msup>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msqrt>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<msup>
+														<mi>a</mi>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<msup>
+														<mi>b</mi>
+														<mn>2</mn>
+													</msup>
+												</mrow>
+											</mfenced>
+										</msqrt>
+										<mo>&or;</mo>
+										<msqrt>
+											<msup>
+												<mi>a</mi>
+												<mn>2</mn>
+											</msup>
+											<mo>+</mo>
+											<msup>
+												<mi>b</mi>
+												<mn>2</mn>
+											</msup>
+											<mo>+</mo>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mi>a</mi>
+											<mo>&InvisibleTimes;</mo>
+											<mi>b</mi>
+										</msqrt>
+										<mtext>(оба положительны)</mtext>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>b</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>&or;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<msup>
+											<mi>b</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>b</mi>
+										<mo>|</mo>
+										<mo>-</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>b</mi>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msup>
+													<mi>a</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<msup>
+													<mi>b</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<mi>a</mi>
+												<mo>&InvisibleTimes;</mo>
+												<mi>b</mi>
+											</mrow>
+										</mfenced>
+										<mo>&gt;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<msup>
+											<mi>b</mi>
+											<mn>2</mn>
+										</msup>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mo>&therefore;</mo>
+										<mtext>исходное тоже больше</mtext>
+										<mo>&#x25FD;</mo>
+									</mtd>
+								</mtr>
+							</mtable>
+						</mrow>
+					</math>
+					Затем в цепочку неравенств можно добавить средние степеней &plusmn;&infin; - максимум и минимум.
+					С максимальным и минимальным значением доказать неравенства достаточно просто.<br>
+					Пусть среди двух чисел одно больше другого (на самом деле, лучше взять - больше другого на <i>c</i>, где <i>c</i> может быть равно 0, и тогда неравенство становится равенством), тогда <i>b = a + c</i>, и max(a, b) = a + c и &there4; <i>max(a, b) &equiv; max(a, a+c)</i> (позже также можно поступить и с минимумом). Для доказательства просто воспользуемся <a href="10.html">свойствами неравенств</a> и сведём к элементарному.
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mtable groupalign="{left}">
+								<mtr>
+									<mtd><maligngroup/>
+										<msqrt>
+											<mfrac>
+												<mrow>
+													<msup>
+														<mi>a</mi>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<msup>
+														<mi>a</mi>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<msup>
+														<mi>c</mi>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<mn>2</mn>
+													<mo>&times;</mo>
+													<mi>a</mi>
+													<mo>&times;</mo>
+													<mi>c</mi>
+												</mrow>
+												<mrow>
+													<mn>2</mn>
+												</mrow>
+											</mfrac>
+										</msqrt>
+										<mo>&or;</mo>
+										<mi>max</mi><mo>&ApplyFunction;</mo>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<mi>a</mi>
+											</mrow>
+											<mrow>
+												<mi>a</mi>
+												<mo>+</mo>
+												<mi>c</mi>
+											</mrow>
+										</mfenced>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msqrt>
+											<mfrac>
+												<mrow>
+													<mn>2</mn>
+													<mo>&InvisibleTimes;</mo>
+													<msup>
+														<mi>a</mi>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<mn>2</mn>
+													<mo>&InvisibleTimes;</mo>
+													<mi>a</mi>
+													<mo>&InvisibleTimes;</mo>
+													<mi>c</mi>
+													<mo>+</mo>
+													<msup>
+														<mi>c</mi>
+														<mn>2</mn>
+													</msup>
+												</mrow>
+												<mrow>
+													<mn>2</mn>
+												</mrow>
+											</mfrac>
+										</msqrt>
+										<mo>&or;</mo>
+										<mi>a</mi>
+										<mo>+</mo>
+										<mi>c</mi>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mfrac>
+											<mrow>
+												<msqrt>
+													<mn>2</mn>
+													<mo>&InvisibleTimes;</mo>
+													<mfenced open="(" close=")" separators=",">
+														<mrow>
+															<msup>
+																<mi>a</mi>
+																<mn>2</mn>
+															</msup>
+															<mo>+</mo>
+															<mi>a</mi>
+															<mo>&InvisibleTimes;</mo>
+															<mi>c</mi>
+														</mrow>
+													</mfenced>
+													<mo>+</mo>
+													<msup>
+														<mi>c</mi>
+														<mn>2</mn>
+													</msup>
+												</msqrt>
+											</mrow>
+											<mrow>
+												<msqrt>
+													<mn>2</mn>
+												</msqrt>
+											</mrow>
+										</mfrac>
+										<mo>&or;</mo>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<mi>a</mi>
+												<mo>+</mo>
+												<mi>c</mi>
+											</mrow>
+										</mfenced>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msqrt>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<msup>
+														<mi>a</mi>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<mi>a</mi>
+													<mo>&InvisibleTimes;</mo>
+													<mi>c</mi>
+												</mrow>
+											</mfenced>
+											<mo>+</mo>
+											<msup>
+												<mi>c</mi>
+												<mn>2</mn>
+											</msup>
+										</msqrt>
+										<mo>&or;</mo>
+										<msqrt>
+											<mn>2</mn>
+										</msqrt>
+										<mo>&InvisibleTimes;</mo>
+										<mi>a</mi>
+										<mo>+</mo>
+										<msqrt>
+											<mn>2</mn>
+										</msqrt>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<msqrt>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<msup>
+														<mi>a</mi>
+														<mn>2</mn>
+													</msup>
+													<mo>+</mo>
+													<mi>a</mi>
+													<mo>&InvisibleTimes;</mo>
+													<mi>c</mi>
+												</mrow>
+											</mfenced>
+											<mo>+</mo>
+											<msup>
+												<mi>c</mi>
+												<mn>2</mn>
+											</msup>
+										</msqrt>
+										<mo>&or;</mo>
+										<msqrt>
+											<mn>2</mn>
+										</msqrt>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mrow>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<msqrt>
+															<mi>a</mi>
+															<mo>+</mo>
+															<mi>c</mi>
+														</msqrt>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mn>2</mn>
+										</msup>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msup>
+													<mi>a</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<mi>a</mi>
+												<mo>&InvisibleTimes;</mo>
+												<mi>c</mi>
+											</mrow>
+										</mfenced>
+										<mo>+</mo>
+										<msup>
+											<mi>c</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>&or;</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<mi>a</mi>
+													<mo>+</mo>
+													<mi>c</mi>
+												</mrow>
+											</mfenced>
+											<mn>2</mn>
+										</msup>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+										<mo>+</mo>
+										<msup>
+											<mi>c</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>&or;</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>c</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mn>4</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+										<mo>|</mo>
+										<mo>-</mo>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<mn>2</mn>
+												<mo>&InvisibleTimes;</mo>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<msup>
+															<mi>a</mi>
+															<mn>2</mn>
+														</msup>
+														<mo>+</mo>
+														<mi>a</mi>
+														<mo>&InvisibleTimes;</mo>
+														<mi>c</mi>
+													</mrow>
+												</mfenced>
+												<mo>+</mo>
+												<msup>
+													<mi>c</mi>
+													<mn>2</mn>
+												</msup>
+											</mrow>
+										</mfenced>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>0</mn>
+										<mo>&le;</mo>
+										<msup>
+											<mi>c</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mo>&therefore;</mo>
+										<mtext>то же верно для исходного</mtext>
+										<mo>&squarf;</mo>
+									</mtd>
+								</mtr>
+							</mtable>
+						</mrow>
+					</math>
+					Теперь докажем что функция минимального значения меньше всех пифагорийских средних (соответственно, <i>min(a, b) &equiv; min(a, a+c)=a</i>).
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mtable groupalign="{left}">
+								<mtr>
+									<mtd><maligngroup/>
+										<mo>&#x25FD;</mo>
+										<mfrac>
+											<mrow>
+												<mn>2</mn>
+											</mrow>
+											<mrow>
+												<mfrac>
+													<mrow>
+														<mn>1</mn>
+													</mrow>
+													<mrow>
+														<mi>a</mi>
+													</mrow>
+												</mfrac>
+												<mo>+</mo>
+												<mfrac>
+													<mrow>
+														<mn>1</mn>
+													</mrow>
+													<mrow>
+														<mi>a</mi>
+														<mo>+</mo>
+														<mi>c</mi>
+													</mrow>
+												</mfrac>
+											</mrow>
+										</mfrac>
+										<mo>&or;</mo>
+										<mi>min</mi><mo>&ApplyFunction;</mo>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<mi>a</mi>
+											</mrow>
+											<mrow>
+												<mi>a</mi>
+												<mo>+</mo>
+												<mi>c</mi>
+											</mrow>
+										</mfenced>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mfrac>
+											<mrow>
+												<mn>2</mn>
+												<mo>&InvisibleTimes;</mo>
+												<mi>a</mi>
+												<mo>&InvisibleTimes;</mo>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<mi>a</mi>
+														<mo>+</mo>
+														<mi>c</mi>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mrow>
+												<mi>a</mi>
+												<mo>+</mo>
+												<mi>c</mi>
+												<mo>+</mo>
+												<mi>a</mi>
+											</mrow>
+										</mfrac>
+										<mo>&or;</mo>
+										<mi>a</mi>
+										<mo>|</mo>
+										<mo>&times;</mo>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<mn>2</mn>
+												<mo>&InvisibleTimes;</mo>
+												<mi>a</mi>
+												<mo>+</mo>
+												<mi>c</mi>
+											</mrow>
+										</mfenced>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>2</mn>
+										<mo>&times;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+										<mo>&or;</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+										<mo>|</mo>
+										<mo>-</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+										<mo>&or;</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>|</mo>
+										<mo>-</mo>
+										<mn>2</mn>
+										<mo>&InvisibleTimes;</mo>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>c</mi>
+										<mo>&geq;</mo>
+										<mn>0</mn>
+									</mtd>
+								</mtr>
+								<mtr>
+									<mtd><maligngroup/>
+										<mo>&because;</mo>
+										<mtext>исходное имеет тот же знак</mtext>
+										<mo>&#x25FD;</mo>
+									</mtd>
+								</mtr>
+							</mtable>
+						</mrow>
+					</math>
+					Итак, получаем цепочку неравенств, связывающую все наиболее известные средние для двух положительных чисел:
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msub>
+								<mrow>
+									<mi>M</mi><mo>&ApplyFunction;</mo>
+								</mrow>
+								<mrow>
+									<mo>-</mo>
+									<mo>&infin;</mo>
+								</mrow>
+							</msub>
+							<mo>&le;</mo>
+							<msub>
+								<mrow>
+									<mi>M</mi><mo>&ApplyFunction;</mo>
+								</mrow>
+								<mrow>
+									<mo>-</mo>
+									<mn>1</mn>
+								</mrow>
+							</msub>
+							<mo>&le;</mo>
+							<msub>
+								<mrow>
+									<mi>M</mi><mo>&ApplyFunction;</mo>
+								</mrow>
+								<mn>0</mn>
+							</msub>
+							<mo>&le;</mo>
+							<msub>
+								<mrow>
+									<mi>M</mi><mo>&ApplyFunction;</mo>
+								</mrow>
+								<mn>1</mn>
+							</msub>
+							<mo>&le;</mo>
+							<msub>
+								<mrow>
+									<mi>M</mi><mo>&ApplyFunction;</mo>
+								</mrow>
+								<mn>2</mn>
+							</msub>
+							<mo>&le;</mo>
+							<msub>
+								<mrow>
+									<mi>M</mi><mo>&ApplyFunction;</mo>
+								</mrow>
+								<mrow>
+									<mo>+</mo>
+									<mo>&infin;</mo>
+								</mrow>
+							</msub>
+						</mrow>
+					</math>
+					<p>
+						Здесь, конечно, уже можно заметить закономерность, которая сохраняется для любых средних степенных от одного любого набора чисел: <math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<msub>
+									<mrow>
+										<mi>M</mi><mo>&ApplyFunction;</mo>
+									</mrow>
+									<mi>i</mi>
+								</msub>
+								<mo>(</mo>
+								<msub>
+									<mi>x</mi>
+									<mn>1</mn>
+								</msub>
+								<mtext>,</mtext>
+								<mspace width="0.5em" />
+								<mo>&hellip;</mo>
+								<mtext>,</mtext>
+								<mspace width="0.5em" />
+								<msub>
+									<mi>x</mi>
+									<mi>n</mi>
+								</msub>
+								<mo>)</mo>
+								<mo>&le;</mo>
+								<msub>
+									<mrow>
+										<mi>M</mi><mo>&ApplyFunction;</mo>
+									</mrow>
+									<mi>j</mi>
+								</msub>
+								<mo>(</mo>
+								<msub>
+									<mi>x</mi>
+									<mn>1</mn>
+								</msub>
+								<mtext>,</mtext>
+								<mspace width="0.5em" />
+								<mo>&hellip;</mo>
+								<mtext>,</mtext>
+								<mspace width="0.5em" />
+								<msub>
+									<mi>x</mi>
+									<mi>n</mi>
+								</msub>
+								<mo>)</mo>
+								<mtext>,</mtext>
+								<mspace width="0.5em" />
+								<mtext>где</mtext>
+								<mspace width="0.5em" />
+								<mi>i</mi>
+								<mo>&lt;</mo>
+								<mi>j</mi>
+							</mrow>
+						</math>. Причём, необходимое и достаточное условие для равенства средних - это равенство всех чисел в наборе. Для данного (гораздо более общего) утверждения доказательство требует оперирования другими более сложными понятиями, поэтому оно здесь (пока) не приводится. Это неравенство можно называть <i>неравенством о средних</i>.
+					</p>
+					Ту цепочку неравенств, которая записана выше, можно записать и в виде самих формул для двух положительных чисел:
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mi>min</mi><mo>&ApplyFunction;</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mi>a</mi>
+								</mrow>
+								<mrow>
+									<mi>b</mi>
+								</mrow>
+							</mfenced>
+							<mo>&le;</mo>
+							<mfrac>
+								<mrow>
+									<mn>2</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+								<mrow>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<mi>a</mi>
+										</mrow>
+									</mfrac>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<mi>b</mi>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</mfrac>
+							<mo>&le;</mo>
+							<mfrac>
+								<mrow>
+									<mi>a</mi>
+									<mo>+</mo>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+								</mrow>
+							</mfrac>
+							<mo>&le;</mo>
+							<msqrt>
+								<mfrac>
+									<mrow>
+										<msup>
+											<mi>a</mi>
+											<mn>2</mn>
+										</msup>
+										<mo>+</mo>
+										<msup>
+											<mi>b</mi>
+											<mn>2</mn>
+										</msup>
+									</mrow>
+									<mrow>
+										<mn>2</mn>
+									</mrow>
+								</mfrac>
+							</msqrt>
+							<mo>&le;</mo>
+							<mi>max</mi><mo>&ApplyFunction;</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mi>a</mi>
+								</mrow>
+								<mrow>
+									<mi>b</mi>
+								</mrow>
+							</mfenced>
+						</mrow>
+					</math>
+					<p>
+						Именно это записанное выше утверждение и было здесь доказано. Этим легко можно пользоваться как опорным неравенством. Доказанное неравенство можно называть <i>неравенством о среднем арифметическом, геометрическом и гармоническом</i>, хотя в нём, конечно, задействованы не только эти средние (оно расширено), и оно также должно быть доказано для любого количества чисел в наборе, здесь же для наглядности оно доказано только для 2.
+					</p>
+				</section>
+				<section>
+					<h2>Простейшие неравенства с модулем</h2>
+					<p>
+						Кроме неравенства о средних при работе с неравенствами необходимы знания о модулях.  При работе с модулями в неравенствах нужно хорошо понимать их геометрическую интерпритацию и определение. Вообще, при работе с неравенствами их визуализация на числовой прямой (или любая другая подходящая) очень полезна.
+					</p>
+					<section>
+						<h3>Модуль и его свойства</h3>
+						<figure>
+							<img src="Absolute_value.svg" alt="Иллюстрация модуля числа">
+							<figcaption>Модуль числа</figcaption>
+						</figure>
+						<p>
+							Итак, <dfn title="модуль числа">модуль числа</dfn> - это расстояние от начала координат (в нашем случае, очевидно, 0) до числа. Также для вещественных чисел можно определить модуль как кусочно-линейную функцию <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mfenced open="|" close="|" separators=",">
+										<mrow>
+											<mi>x</mi>
+										</mrow>
+									</mfenced>
+									<mo>=</mo>
+									<mfenced open="{" close=" " separators=",">
+										<mrow>
+											<mtable>
+												<mtr>
+													<mtd>
+														<mi>x</mi>
+														<mtext>,</mtext>
+													</mtd>
+													<mtd>
+														<mi>x</mi>
+														<mo>&geq;</mo>
+														<mn>0</mn>
+													</mtd>
+												</mtr>
+												<mtr>
+													<mtd>
+														<mo>-</mo>
+														<mi>x</mi>
+														<mtext>,</mtext>
+													</mtd>
+													<mtd>
+														<mi>x</mi>
+														<mo>&lt;</mo>
+														<mn>0</mn>
+													</mtd>
+												</mtr>
+											</mtable>
+										</mrow>
+									</mfenced>
+								</mrow>
+							</math>. Модуль числа также называют его <i>абсолютным значением</i> (или абсолютной величиной). Модуль от числа <i>a</i> обозначается <i>|a|</i>.
+						</p>
+						<p>
+							Некоторые свойства функции модуля и её графика можно посмотреть <a href="3.html">на этой странице</a>.
+						</p>
+						<p>
+							Область определения для вещественных чисел: <i>D(x)=(+&infin;; -&infin;)</i>. Область значений для вещественных чисел: <i>E(y)=[0; +&infin;)</i>. Является, всюду кроме 0 дифференцируемой, чётной функцией.
+						</p>
+						<p>
+							Конечно, понятие модуля можно обобщить и для <a href="9.html">комплексных чисел</a>. Тогда формулой будет: <i>|z|=|x+yi|=&radic;(x&sup2;+y&sup2;)</i>. Модуль комплексного числа z – это расстояние от начала комплексной плоскости до точки, соответствующей числу z в этой плоскости. Модуль как комплексная функция не дифференцируема ни в одной точке, поскольку условия Коши-Римана не выполнены. Понятие модуля, вообще, можно обобщить для очень большого количества расширений вещественных чисел. Можно сказать, что <i>норма</i> (<a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%BE%D1%80%D0%BC%D0%B0_%28%D0%BC%D0%B0%D1%82%D0%B5%D0%BC%D0%B0%D1%82%D0%B8%D0%BA%D0%B0%29" title="Норма">Wikipedia</a>) - это в некотором роде обобщение понятия модуля для векторных пространств.
+						</p>
+						<h4>Свойства модуля вещественного числа</h4>
+						<ol start="0">
+							<li>|a| = &radic;(a&sup2;) (очевидное, широко используемое свойство, относящееся скорее к <i><a href="5.html">свойствам квадратного корня</a></i>; теоретически, так даже можно определить само понятие модуля вещественного числа; здесь можно заметить ещё одно &quot;свойство&quot; модуля, а точнее чётных степеней: так как они неотрицательны, то <i>a<sup>2k</sup> = |a|<sup>2k</sup></i>)</li>
+							<li>|a| &ge; 0 (<i>неотрицательность</i>) - следует из определения</li>
+							<li>|a| = |-a| (<i>чётность</i>) - левая полуплоскость заменяется правой</li>
+							<li>|a| = 0 &hArr; a = 0 (<i>положительная определённость</i>)</li>
+							<li>|a||b| = |ab| (<i>мультипликативность</i>)</li>
+							<li>|a|/|b| = |a/b| (<i>сохранение деления - эквивалент мультипликативности</i>; b&ne;0)</li>
+							<li>|a+b| &le; |a|+|b| (<i>субаддитивность</i>)</li>
+							<li>|(|a|)| = |a| (<i>идемпотентность</i>)</li>
+							<li>|a-b| = 0 &hArr; a = b (<i>эквивалентность равенству - эквивалент положительной определённости</i>; очевидный вывод из того, что |a-b| означает расстояние от <var>a</var> до <var>b</var>)</li>
+							<li>|a-b| &le; |a-c|+|c-b| (<i>неравенство треугольника</i> - полный эквивалент свойства субаддитивности)</li>
+							<li>|a-b| &ge; |(|a|-|b|)| (<i>обратное неравенство треугольника</i> - эквивалентно свойству субаддитивности)</li>
+							<li>|ab|, a &ge; 0 &hArr; a|b| (постоянный положительный множитель можно выносить за знак модуля - тоже очевидное свойство, следующее из определения, также если подмодульное выражение неотрицательно, то модуль можно убрать)</li>
+							<li>|a<sup>k</sup>| = |a|<sup>k</sup> (подразумевается, что a<sup>k</sup> существует)</li>
+							<li>a &le; |a| (само число либо больше, либо равно своему модулю; или a=|a|, или a отрицательно - тогда модуль противоположен &there4; больше; эквивалентно a&ge;-|a|)</li>
+							<li>|a| &le; b &hArr; -b &le; a &le; b (где b &ge; 0)</li>
+							<li>|a| &ge; b &hArr; a &le; -b &or; a &ge; b (где b &ge; 0)</li>
+						</ol>
+						<p>Итак, отсюда можно выделить 4 основных свойства модуля.</p>
+						<dl title="Основные свойства модуля">
+							<dt><i>Неотрицательность</i></dt>
+							<dd>|a| &ge; 0 - Модуль числа всегда неотрицателен.</dd>
+							<dt><i>Положительная определённость</i></dt>
+							<dd>|a| = 0 &hArr; (модуль числа равен нулю тогда и только тогда, когда это число есть нуль.) a = 0 и предыдушее. Значения функции меньше нуля невозможны.</dd>
+							<dt><i>Мультипликативность</i></dt>
+							<dd>|a||b| = |ab| &mdash; Модуль произведения двух чисел равен произведению модулей этих чисел.</dd>
+							<dt><i>Субаддитивность</i></dt>
+							<dd>|a+b| &le; |a| + |b| &mdash; Модуль суммы двух чисел не превосходит сумму модулей этих чисел.</dd>
+						</dl>
+						<p>Всегда важно помнить о чётности функции, которая фактически определяет модуль (или наоборот) - мы берём линейную функцию <i>y=&fnof;(x)</i> и заменяем левую полуплоскость (x&le;0) правой (x&ge;0).</p>
+						<p>Идемпотентность - тоже вполне занимательное и важное свойство. <dfn title="идемпотентность">Термин идемпотентность</dfn> - свойство математической операции, означающее, что её повторное применение даёт тот же результат, что и одинарное - сколько раз не применяй, результат остаётся инвариантен.</p>
+						<p>
+							Модуль <var>x</var> равен не только квадратному корню из квадрата <var>x</var>. Например, рассмотрим одну из известных кусочно-постоянных функций, используемую для компактной записи знака числа - <i>sgn(<var>x</var>)</i>. Она определяется так: <math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mi>sgn</mi><mo>&ApplyFunction;</mo>
+								<!--<mo>(</mo>
+								<mi>x</mi>
+								<mo>)</mo>-->
+								<mfenced open="(" close=")" separators=",">
+									<mrow>
+										<mi>x</mi>
+									</mrow>
+								</mfenced>
+								<mo>&colone;</mo>
+								<mfenced open="{" close=" " separators=",">
+									<mrow>
+										<mtable>
+											<mtr>
+												<mtd>
+													<mn>1</mn>
+													<mtext>,</mtext>
+												</mtd>
+												<mtd>
+													<mi>x</mi>
+													<mo>&gt;</mo>
+													<mn>0</mn>
+												</mtd>
+											</mtr>
+											<mtr>
+												<mtd>
+													<mn>0</mn>
+													<mtext>,</mtext>
+												</mtd>
+												<mtd>
+													<mi>x</mi>
+													<mo>=</mo>
+													<mn>0</mn>
+												</mtd>
+											</mtr>
+											<mtr>
+												<mtd>
+													<mo>-</mo>
+													<mn>1</mn>
+													<mtext>,</mtext>
+												</mtd>
+												<mtd>
+													<mi>x</mi>
+													<mo>&lt;</mo>
+													<mn>0</mn>
+												</mtd>
+											</mtr>
+										</mtable>
+									</mrow>
+								</mfenced>
+							</mrow>
+							</math> (кстати, если представить её график, то можно сразу понять, что она нечётная).
+							С этой функцией можно сделать вывод: <i>|x| = x &times; sgn(x)</i>. Ещё переопределить модуль можно через каждому известную функцию <i>max(x, y)</i>, которая здесь уже обсуждалась. Тогда: <i>|x| = max(x, -x).</i>
+						</p>
+						<p>
+							Фактически, модуль разности двух чисел <i>a</i> и <i>b</i> равен расстоянию между точками координатной прямой с координатами <i>a</i> и <i>b</i>. В некотором роде, можно понять, что озвученное определение модуля (геометрическое и наиболее полное) является частным случаем этого определения. Это |a-b| могут назвать также иногда абсолютной разницей. Значит, вцелом, абсолютная разница представляет собой расстояние. Модуль очень тесно связан с идеей расстояния.
+						</p>
+					</section>
+					<section>
+						<h4>Простейшие неравенства с модулем и числовая прямая</h4>
+						<p>Свойства модуля под номерами 14 и 15 хотелось бы разобрать отдельно. По сути, эти свойства означают, что модуль x разбивается на <a href="12.html">систему и совокупность неравенств</a>.</p>
+						<p>
+							Рассмотрим их подробнее. Сначала |a| &le; b &hArr; -b &le; a &le; b. В свойстве записано b &ge; 0. Почему же это верно? Собственно говоря, если b &le; 0, то &there4; |a| &le; 0, однако, по основному свойству модуля - неотрицательности (свойство 1) <i>a</i>, удовлетворяющих неравенству, не существует - поэтому оно не имеет смысла.
+						</p>
+						<p>
+							При решении, доказательстве и формировании неравенств можно определённо пользоватся всеми приведёнными выше свойствами и опорными неравенствами. Говоря об опорных неравенствах и сведении других неравенств к ним (или наоборот) для доказательства, такой подход можно назвать <i>систематическим методом решения неравенств</i>. Он тоже часто используется в доказательствах. Его суть - вывод необходимого (искомого) неравенства из известных (опорных) путём определённых преобразований (конечно, здесь обычно пользуются всеми свойствами неравенств). Примером хороших опорных неравенств с модулями может служить этот достаточно простой: <i>a&sup2;+b&sup2; &ge; 2|ab|</i>
+						</p>
+						<figure>
+							<img src="modulus_x_less_or_equal_to_a.svg" alt="Графическое решение неравенства модуль x меньше или равен a">
+							<figcaption>Графическое решение неравенства <i>|x| &le; a (a&ge;0)</i></figcaption>
+						</figure>
+						<p>
+							Но, собственно, как доказать само данное неравенство, и, возвращаясь к исходному &quot;свойству&quot; 14, как доказать его - и притом сделать это быстро, наглядно, логично, ни на что не опираясь. Здесь то и помогает геометрическая интерпритация. Вообще, геометрическое решение неравенств (особенно сложных) можно назвать <i>методом интервалов</i>. Метод интервалов - это метод раскрытия модулей, используя числовую прямую - через визуализацию интервалов (см. <a href="12.html">определение интервала и его обозначения</a>). На самом деле, метод интервалов обозначает немного другое, но об этом не здесь. Данное графическое решение любой может сам вывести, памятуя об определении (геометрической интерпритации) модуля.
+						</p>
+						<math display="block">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mtable groupalign="{left}">
+									<mtr>
+										<mtd><maligngroup/>
+											<mfenced open="|" close="|" separators=",">
+												<mrow>
+													<mi>x</mi>
+												</mrow>
+											</mfenced>
+											<mo>&le;</mo>
+											<mi>a</mi>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd><maligngroup/>
+											<mfenced open="{" close=" " separators=",">
+												<mrow>
+													<mtable>
+														<mtr>
+															<mtd>
+																<mi>x</mi>
+																<mo>&le;</mo>
+																<mi>a</mi>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd>
+																<mi>x</mi>
+																<mo>&geq;</mo>
+																<mo>-</mo>
+																<mi>a</mi>
+															</mtd>
+														</mtr>
+													</mtable>
+												</mrow>
+											</mfenced>
+										</mtd>
+									</mtr>
+								</mtable>
+							</mrow>
+						</math>
+						<figure>
+							<img src="modulus_x_greater_or_equal_to_a.svg" alt="Графическое решение неравенства модуль x больше или равен a">
+							<figcaption>Графическое решение неравенства <i>|x| &ge; a (a&ge;0)</i></figcaption>
+						</figure>
+						<p>
+							Также можно разобать номер 15, используя числовую прямую. Итак, неравенство <i>|x| &ge; a</i>, <i>a</i> &ge; 0, сводится к совокупности неравенств.
+						</p>
+						<math display="block">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mtable groupalign="{left}">
+									<mtr>
+										<mtd><maligngroup/>
+											<mfenced open="|" close="|" separators=",">
+												<mrow>
+													<mi>x</mi>
+												</mrow>
+											</mfenced>
+											<mo>&geq;</mo>
+											<mi>a</mi>
+										</mtd>
+									</mtr>
+									<mtr>
+										<mtd><maligngroup/>
+											<mfenced open="[" close=" " separators=",">
+												<mrow>
+													<mtable>
+														<mtr>
+															<mtd>
+																<mi>x</mi>
+																<mo>&le;</mo>
+																<mo>-</mo>
+																<mi>a</mi>
+															</mtd>
+														</mtr>
+														<mtr>
+															<mtd>
+																<mi>x</mi>
+																<mo>&geq;</mo>
+																<mi>a</mi>
+															</mtd>
+														</mtr>
+													</mtable>
+												</mrow>
+											</mfenced>
+										</mtd>
+									</mtr>
+								</mtable>
+							</mrow>
+						</math>
+						<p>Выражения с переменной под модулям всегда неотрицательны (свойство 1), поэтому их можно раскрывать. Например, <i>|x-5| &ge; 7</i>. Тогда раскроем модуль: либо при x&lt;-5 -x+5 &ge; 7, либо при x&ge;-5 x-5 &ge; 7. Для этого и нужна числовая прямая.</p>
+						Для модуля <i>|<var>x</var>+a|</i>, где <var>x</var> - переменная, а <i>a</i> - число, можно сделать такую заготовку для &quot;метода интервалов&quot;: иллюстрация есть с подписью &quot;|x+a|&quot;.<br>
+						<figure class="center_pic">
+							<img src="interval_modulus.svg" alt="Метод интервалов для модулей" class="center_pic">
+							<figcaption>|x+a|</figcaption>
+						</figure>
+					</section>
+					<p>
+						Тогда для большего количества модулей в неравенстве будет большее количество интервалов &there4; неравенство раскроется с бОльшим количеством случаев.
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Определение степени с целым показателем. Свойства степени с целым показателем.</h1>
+		</header>
+		<main>
+			<article>
+				<section>
+					<h2>Степень с целым показателем - определение понятия степень</h2>
+					<p>
+						<dfn title="возведение в степень">Возведение в (<i>n-ую</i>) степень</dfn> &mdash; это очень часто используемая в математике бинарная операция, которая была первоначально определена для  натуральных чисел, как умножение числа само на себя (<i>n раз</i>). Степень записывается как <i>a<sup>n</sup></i>, где возводимое в степень (умножаемое само на себя) число <i>a</i> называется основанием, а количество подобных множетелей <i>n</i> называется показателем степени.
+					</p>
+					<p>
+						Наглядно натуральную степень можно показать так: <math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<msup>
+									<mi>a</mi>
+									<mi>n</mi>
+								</msup>
+								<mo>=</mo>
+								<munder>
+									<mrow>
+										<mtable>
+											<mtr>
+												<mtd>
+													<mi>a</mi>
+													<mo>&times;</mo>
+													<mo>&CenterDot;&CenterDot;&CenterDot;</mo>
+													<mo>&times;</mo>
+													<mi>a</mi>
+												</mtd>
+											</mtr>
+										</mtable>
+									</mrow>
+									<munder>
+										<mo>&UnderBrace;</mo>
+										<mrow>
+											<mi>n</mi>
+											<mspace width="0.2em" />
+											<mtext>раз</mtext>
+										</mrow>
+									</munder>
+								</munder>
+							</mrow>
+						</math>. Соответстенно, <i>a&sup1; = a</i>. Также принято брать <i>a<sup>0</sup> = 1</i> для любого a&ne;0 (сразу дополним множество натуральных до <i>&naturals;<sub>0</sub></i>). Ноль в нулевой степени неопределён. На самом деле, последнее утверждение является предметом обширных математических дебатов и потому наиболее интересным случаем степени с неотрицательным показателем. Надо сказать, что Коши первым показал - для лимита <i>0<sup>0</sup></i> он точно является неопределённым. Либри придерживался точно противоположного мнения - <i>0<sup>0</sup>=1</i> всегда. Наконец, согласно Дональду Кнуту <i>0<sup>0</sup></i> &quot;должен быть&quot; 1 - он различал само значение, которое равно 1, и  неоределённый лимит функции. Поэтому вцелом этот спорный мат. объект можно оставить неопределённым, но общепринято для удобства часто можно спокойно брать <i>0<sup>0</sup>=1</i> - а иначе многие расчёты могут не сойтись. Именно поэтому в программировании, наверное, в любой программе <i>0<sup>0</sup>=1</i>.
+					</p>
+					<p>
+						Итак, со степенью с натуральным (да и после небольшой оговорки насчёт <i>0<sup>0</sup></i> &ndash; с любым неотрицательным) показателем всё ясно - это просто удобный способ сокращённо записать умножение числа самого на себя. Соответственно, степень с целым показателем часто используется для записи больших чисел, а особенно часто - степени десяти, умноженные на десятичную дробь (подобную запись числа (M&times;10<sup>n</sup>, где <i>n</i> - порядок число) называют <dfn title="экспоненциальная запись числа">экспоненциальной</dfn>). Примером подобной записи будет служить обычная запись заряда одного электрона в физике: <i>1.6021766208(98)&times;10<sup>-19</sup> Кулон</i>, хотя, говоря об обычности, можно записать приблизительно <i>1.602&times;10<sup>-19</sup>К</i>. Далее после возведения в степень &quot;следует&quot; операция тетрации - последовательное возведение в степень. Под этим утверждением здесь подразумевается, что экспоненцицию (возведение в степень) можно рассматривать в контексте других операций - сложения, умножения, вышеупомянутой тетрации, пентации, гексации &mdash; у всех этих операций, как можно заметить, есть много общего. Их вместе называют <i>гипероператорами</i>. Поэтому в парадигме гипероператоров возведение в степень можно логически вывести из умножения. Гипероператор каждого следующего порядка опеределяется рекурсивно как многократное применение предыдущего (b раз).
+					</p>
+					Рассмотрим подробнее последовательность из четырёх первых наиболее известных гипероператоров:
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msup>
+								<mi>a</mi>
+								<mfenced open="(" close=")" separators=",">
+									<mrow>
+										<mn>1</mn>
+									</mrow>
+								</mfenced>
+							</msup>
+							<!--<mo>&InvisibleTimes;</mo>-->
+							<mi>b</mi>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>+</mo>
+							<munder>
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mn>1</mn>
+												<mo>+</mo>
+												<mn>1</mn>
+												<mo>+</mo>
+												<mo>&hellip;</mo>
+												<mo>+</mo>
+												<mn>1</mn>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+								<munder>
+									<mo>&UnderBrace;</mo>
+									<mi>b</mi>
+								</munder>
+							</munder>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>+</mo>
+							<mi>b</mi>
+							<mspace width="0.5em" />
+							<mtext>-</mtext>
+							<mspace width="0.5em" />
+							<mtext>сложение</mtext>
+						</mrow>
+					</math>
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msup>
+								<mi>a</mi>
+								<mfenced open="(" close=")" separators=",">
+									<mrow>
+										<mn>2</mn>
+									</mrow>
+								</mfenced>
+							</msup>
+							<!--<mo>&InvisibleTimes;</mo>-->
+							<mi>b</mi>
+							<mo>=</mo>
+							<munder>
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mi>a</mi>
+												<mo>+</mo>
+												<mi>a</mi>
+												<mo>+</mo>
+												<mo>&hellip;</mo>
+												<mo>+</mo>
+												<mi>a</mi>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+								<munder>
+									<mo>&UnderBrace;</mo>
+									<mi>b</mi>
+								</munder>
+							</munder>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>&times;</mo>
+							<mi>b</mi>
+							<mspace width="0.5em" />
+							<mtext>-</mtext>
+							<mspace width="0.5em" />
+							<mtext>умножение</mtext>
+						</mrow>
+					</math>
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msup>
+								<mi>a</mi>
+								<mfenced open="(" close=")" separators=",">
+									<mrow>
+										<mn>3</mn>
+									</mrow>
+								</mfenced>
+							</msup>
+							<!--<mo>&InvisibleTimes;</mo>-->
+							<mi>b</mi>
+							<mo>=</mo>
+							<munder>
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mi>a</mi>
+												<mo>&times;</mo>
+												<mi>a</mi>
+												<mo>&times;</mo>
+												<mo>&hellip;</mo>
+												<mo>&times;</mo>
+												<mi>a</mi>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+								<munder>
+									<mo>&UnderBrace;</mo>
+									<mi>b</mi>
+								</munder>
+							</munder>
+							<mo>=</mo>
+							<msup>
+								<mi>a</mi>
+								<mi>b</mi>
+							</msup>
+							<mspace width="0.5em" />
+							<mtext>-</mtext>
+							<mspace width="0.5em" />
+							<mtext>экспоненциация</mtext>
+						</mrow>
+					</math>
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<msup>
+								<mi>a</mi>
+								<mfenced open="(" close=")" separators=",">
+									<mrow>
+										<mn>4</mn>
+									</mrow>
+								</mfenced>
+							</msup>
+							<!--<mo>&InvisibleTimes;</mo>-->
+							<mi>b</mi>
+							<mo>=</mo>
+							<munder>
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<msup>
+													<mi>a</mi>
+													<msup>
+														<mi>a</mi>
+														<msup>
+															<mi>a</mi>
+															<msup>
+																<mo>&hellip;</mo>
+																<mi>a</mi>
+															</msup>
+														</msup>
+													</msup>
+												</msup>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+								<munder>
+									<mo>&UnderBrace;</mo>
+									<mi>b</mi>
+								</munder>
+							</munder>
+							<mo>=</mo>
+							<msup>
+								<mspace width="0.5em" />
+								<mi>n</mi>
+							</msup>
+							<mi>a</mi>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>&uuarr;</mo>
+							<mi>b</mi>
+							<mspace width="0.5em" />
+							<mtext>-</mtext>
+							<mspace width="0.5em" />
+							<mtext>тетрация</mtext>
+						</mrow>
+					</math>
+					<p>
+						Таким образом, любые гипероператоры высших порядков уже очень сложно представить, записать, да и работать с ними непросто. Поэтому на примере записи тетрации (которая является итерационным возведением в степень) выше очевидно удобнее с большими числами использовать <i>стрелочную нотацию Кнута</i>. Стрелочная нотация неразрывно связана с последовательностью гипероператоров и возведением в степень - само возведение в степень и обозначается одиночной стрелкой (направленной вверх) &uarr;. Поэтому теоретически можно встретить запись вида a&uarr;b=a<sup>b</sup>, хотя так делают крайне редко, так как обычного обозначения для степени достаточно, но для каждой следующей итерации добавляется по стрелке и тут уже без подобной нотации не обойтись - особенно для всех гипероперторов после тетрации. (Побольше об этом можно почитать в знаменитых работах Дональда Кнута.)
+					</p>
+					<p>
+						Теперь записать последовательное возведение в степень не составит труда.
+					</p>
+					<p>
+						Всем также известно, что некоторые показатели степени имеют своё особое название из-за частого использования и т.д.: третья степень называется <i>кубом</i>, а вторая степень называется <i>квадратом</i>. Ещё кроме определённых степеней встречаются числа, часто возводимые в степень: есть степени двойки, имеющие широкое применение в информатике, программировании и т.д., и степени десятки, вообще широко используемые всеми (сознательно или бессознательно). На самом деле, очень важны степени чисел-оснований систем счисления. Ещё, например, особое внимание уделялось одно время числу <i>2<sup>&radic;2</sup></i> - Гильберт обозначил одним из мировых вопросов математики, является ли данное число трансцендентным (позже было доказано, что является).
+					</p>
+					<section>
+						<h3>Дополнение степеней отрицательными - расширение до множества целых &integers;</h3>
+						<p>
+							Если <i>n</i> &mdash; целое отрицательное число и <i>a&ne;0</i> (очевидное условие, так как деление на 0 не определено), то <i>a<sup>n</sup> = 1/(a<sup>-n</sup>)</i>. Ясно, что 0 - очень особенное число, и для него отрицательных степеней нет - для него не расширить.
+						</p>
+						<p>
+							К этому достаточно легко прийти. Например, возьмём выражение (все числа неотрицательные целые) <math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mfrac>
+										<mrow>
+											<msup>
+												<mi>k</mi>
+												<mi>b</mi>
+											</msup>
+										</mrow>
+										<mrow>
+											<msup>
+												<mi>k</mi>
+												<mrow>
+													<mn>2</mn>
+													<mo>&InvisibleTimes;</mo>
+													<mi>b</mi>
+												</mrow>
+											</msup>
+										</mrow>
+									</mfrac>
+									<mo>=</mo>
+									<mfrac>
+										<mrow>
+											<mn>1</mn>
+										</mrow>
+										<mrow>
+											<msup>
+												<mi>k</mi>
+												<mi>b</mi>
+											</msup>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</math>. А теперь для того же исходного воспользуемся известным свойством степени с неотрицательным показателем - <i>a<sup>m</sup>&divide;b<sup>n</sup> = a<sup>m-n</sup></i>. Получается: <i>k<sup>b</sup>&divide;k<sup>2b</sup> = k<sup>b-2b</sup> = k<sup>-b</sup></i>. &there4; <i>k<sup>-b</sup>=1/(k<sup>b</sup>)</i>.
+
+						</p>
+					</section>
+				</section>
+				<section>
+					<h2>Свойства степени с целым показателем</h2>
+					<p>
+						Легко расширив понятие степени для множества целых чисел, можно спокойно рассматреть все свойсва степеней с целым показателем (фактически, они, конечно, совпадают с уже знакомыми многим свойствами степеней с натуральными показателями). Опять же случай, где <i>a = 0</i> исключается из степеней, обладающих данными свойствами - в любом случае, для него всё и так ясно.
+					</p>
+					<ol>
+						<li><i>a<sup>m</sup>a<sup>n</sup> = a<sup>m+n</sup></i></li>
+						<li>a<sup>m</sup>&divide;a<sup>n</sup> = a<sup>m-n</sup></li>
+						<li>(a<sup>m</sup>)<sup>n</sup> = a<sup>mn</sup></li>
+						<li>(ab)<sup>n</sup> = a<sup>n</sup>b<sup>n</sup></li>
+						<li>(a/b)<sup>n</sup> = (a<sup>n</sup>)/(b<sup>n</sup>)</li>
+					</ol>
+					<p>
+						Доказать данные свойства не составит труда. Водится начинать с начала, поэтому <i>a<sup>m</sup>a<sup>n</sup> = a<sup>m+n</sup></i>, так как при m&gt;0 и n&gt;0 <math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<munder>
+									<mrow>
+										<mtable>
+											<mtr>
+												<mtd>
+													<mi>a</mi>
+													<mo>&times;</mo>
+													<mo>&CenterDot;&CenterDot;&CenterDot;</mo>
+													<mo>&times;</mo>
+													<mi>a</mi>
+												</mtd>
+											</mtr>
+										</mtable>
+									</mrow>
+									<munder>
+										<mo>&UnderBrace;</mo>
+										<mrow>
+											<mi>n</mi>
+											<mspace width="0.2em" />
+											<mtext>раз</mtext>
+										</mrow>
+									</munder>
+								</munder>
+								<mo>&times;</mo>
+								<munder>
+									<mrow>
+										<mtable>
+											<mtr>
+												<mtd>
+													<mi>a</mi>
+													<mo>&times;</mo>
+													<mo>&CenterDot;&CenterDot;&CenterDot;</mo>
+													<mo>&times;</mo>
+													<mi>a</mi>
+												</mtd>
+											</mtr>
+										</mtable>
+									</mrow>
+									<munder>
+										<mo>&UnderBrace;</mo>
+										<mrow>
+											<mi>m</mi>
+											<mspace width="0.2em" />
+											<mtext>раз</mtext>
+										</mrow>
+									</munder>
+								</munder>
+								<mo>=</mo>
+								<msup>
+									<mi>a</mi>
+									<mi>n</mi>
+								</msup>
+								<msup>
+									<mi>a</mi>
+									<mi>m</mi>
+								</msup>
+								<mo>=</mo>
+								<msup>
+									<mi>a</mi>
+									<mi>n+m</mi>
+								</msup>
+							</mrow>
+						</math> (получается при <i>a<sup>n</sup>a<sup>m</sup></i>, всего есть n+m чисел a, между которыми знаки умножения - иначе, a в степени n+m). Далее, при n&gt;0 и m&gt;0 (-m&lt;0) a<sup>n</sup>a<sup>-m</sup>=a<sup>n</sup>*(1/(a<sup>m</sup>))=a<sup>n</sup>/(a<sup>m</sup>) (<i>a</i> сокращаются - остаётся n+(-m) <i>a</i>) a<sup>n</sup>a<sup>-m</sup>=a<sup>n+(-m)</sup>. Если же m&lt;0 и n&lt;0, то всё просто - это эквивалент первого случая, но в числителе дроби: <math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mfrac>
+									<mrow>
+										<mn>1</mn>
+									</mrow>
+									<mrow>
+										<munder>
+											<mrow>
+												<mtable>
+													<mtr>
+														<mtd>
+															<mi>a</mi>
+														</mtd>
+														<mtd>
+															<mo>&hellip;</mo>
+														</mtd>
+														<mtd>
+															<mi>a</mi>
+														</mtd>
+													</mtr>
+												</mtable>
+											</mrow>
+											<munder>
+												<mo>&UnderBrace;</mo>
+												<mrow>
+													<mo>-</mo>
+													<mi>n</mi>
+												</mrow>
+											</munder>
+										</munder>
+									</mrow>
+								</mfrac>
+								<mo>*</mo>
+								<mfrac>
+									<mrow>
+										<mn>1</mn>
+									</mrow>
+									<mrow>
+										<munder>
+											<mrow>
+												<mtable>
+													<mtr>
+														<mtd>
+															<mi>a</mi>
+														</mtd>
+														<mtd>
+															<mo>&hellip;</mo>
+														</mtd>
+														<mtd>
+															<mi>a</mi>
+														</mtd>
+													</mtr>
+												</mtable>
+											</mrow>
+											<munder>
+												<mo>&UnderBrace;</mo>
+												<mrow>
+													<mo>-</mo>
+													<mi>m</mi>
+												</mrow>
+											</munder>
+										</munder>
+									</mrow>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<mn>1</mn>
+									</mrow>
+									<mrow>
+										<munder>
+											<mrow>
+												<mtable>
+													<mtr>
+														<mtd>
+															<mi>a</mi>
+															<mo>&times;</mo>
+															<mo>&hellip;</mo>
+															<mo>&times;</mo>
+															<mi>a</mi>
+														</mtd>
+													</mtr>
+												</mtable>
+											</mrow>
+											<munder>
+												<mo>&UnderBrace;</mo>
+												<mrow>
+													<mo>-</mo>
+													<mi>n</mi>
+													<mo>-</mo>
+													<mi>m</mi>
+												</mrow>
+											</munder>
+										</munder>
+									</mrow>
+								</mfrac>
+								<mo>=</mo>
+								<msup>
+									<mi>a</mi>
+									<mrow>
+										<mi>n</mi>
+										<mo>+</mo>
+										<mi>m</mi>
+									</mrow>
+								</msup>
+							</mrow>
+						</math>.
+					</p>
+					<p>
+						Доказать второе свойство также не составит труда. При n&gt;0 и m&gt;0 (a<sup>m</sup>)/(a<sup>n</sup>)=a<sup>m</sup>a<sup>-n</sup> - первое свойство. При всех остальных m и n всё также (вытекает из первого). Иначе можно доказать, представив <i>a<sup>m</sup>&divide;a<sup>n</sup>=a<sup>x</sup></i>. Тогда согласно определению частного получается: <i>a<sup>x</sup>&times;a<sup>n</sup>=a<sup>m</sup></i>. Теперь опять же, воспользовавшись тождеством (1), <i>a<sup>x+n</sup>=a<sup>m</sup></i>. Отсюда: x+n = m, x = m-n. Можно подставить в исходное: <i>a<sup>m</sup>&divide;a<sup>n</sup>=a<sup>m-n</sup></i>.
+					</p>
+					<p>
+						Теперь подлежит рассмотрению тождество (3). <math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<msup>
+									<mrow>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msup>
+													<mi>a</mi>
+													<mi>m</mi>
+												</msup>
+											</mrow>
+										</mfenced>
+									</mrow>
+									<mi>n</mi>
+								</msup>
+								<mo>=</mo>
+								<munder>
+									<mrow>
+										<mtable>
+											<mtr>
+												<mtd>
+													<munder>
+														<mrow>
+															<mtable>
+																<mtr>
+																	<mtd>
+																		<mi>a</mi>
+																		<mo>&times;</mo>
+																		<mo>&hellip;</mo>
+																		<mo>&times;</mo>
+																		<mi>a</mi>
+																	</mtd>
+																</mtr>
+															</mtable>
+														</mrow>
+														<munder>
+															<mo>&UnderBrace;</mo>
+															<mi>m</mi>
+														</munder>
+													</munder>
+												</mtd>
+												<mtd>
+													<mo>&times;</mo>
+												</mtd>
+												<mtd>
+													<mo>&hellip;</mo>
+												</mtd>
+												<mtd>
+													<mo>&times;</mo>
+												</mtd>
+												<mtd>
+													<munder>
+														<mrow>
+															<mtable>
+																<mtr>
+																	<mtd>
+																		<mi>a</mi>
+																		<mo>&times;</mo>
+																		<mo>&hellip;</mo>
+																		<mo>&times;</mo>
+																		<mi>a</mi>
+																	</mtd>
+																</mtr>
+															</mtable>
+														</mrow>
+														<munder>
+															<mo>&UnderBrace;</mo>
+															<mi>m</mi>
+														</munder>
+													</munder>
+												</mtd>
+											</mtr>
+										</mtable>
+									</mrow>
+									<munder>
+										<mo>&UnderBrace;</mo>
+										<mi>n</mi>
+									</munder>
+								</munder>
+								<mo>=</mo>
+								<munder>
+									<mrow>
+										<mtable>
+											<mtr>
+												<mtd>
+													<mi>a</mi>
+													<mo>&times;</mo>
+													<mo>&CenterDot;&CenterDot;&CenterDot;</mo>
+													<mo>&times;</mo>
+													<mi>a</mi>
+												</mtd>
+											</mtr>
+										</mtable>
+									</mrow>
+									<munder>
+										<mo>&UnderBrace;</mo>
+										<mrow>
+											<mi>m</mi>
+											<mo>&times;</mo>
+											<mi>n</mi>
+										</mrow>
+									</munder>
+								</munder>
+								<mo>=</mo>
+								<msup>
+									<mi>a</mi>
+									<mrow>
+										<mi>m</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>n</mi>
+									</mrow>
+								</msup>
+							</mrow>
+						</math> (a<sup>m</sup> повторяется n раз - есть m множителей <i>a</i>, перемноженных n раз, или n*m множителей <i>a</i>). И т. д.
+					</p>
+					<p>
+
+					</p>
+				</section>
+				<section>
+					<h2>Немного о дробных показателях</h2>
+					<p>
+						Дробные показатели соответствуют корням (см. <a href="4.html">арифметический квадратный корень</a>). Они являются решениями уравнения x<sup>n</sup>=b
+					</p>
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>

@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Определение квадратного уравнения. Неполные квадратные уравнения. Квадратичная функция и её свойства.</h1>
+		</header>
+		<main>
+			<article>
+				<section>
+					<h2>Определение квадратного уравнения</h2>
+					<figure>
+						<img src="Parabola.svg" alt="График квадратичной функции">
+						<figcaption>Парабола - график функции <var>y</var> = <var>x</var>&sup2;</figcaption>
+					</figure>
+					<p>
+						<dfn>Квадратное уравнение</dfn> - это уравнение вида <i>a<var>x</var>&sup2;+b<var>x</var>+c=0</i>, где а не равно нулю.
+					</p>
+					<math display="block">
+						<mrow>
+							<mi>a</mi>
+							<mo>&InvisibleTimes;</mo>
+							<msup>
+								<mi>x</mi>
+								<mn>2</mn>
+							</msup>
+							<mo>+</mo>
+							<mi>b</mi>
+							<mo>&InvisibleTimes;</mo>
+							<mi>x</mi>
+							<mo>+</mo>
+							<mi>c</mi>
+							<mo>=</mo>
+							<mn>0</mn>
+							<mtext>,</mtext>
+							<mspace width="0.5em" />
+							<mtext>где</mtext>
+							<mspace width="0.5em" />
+							<mi>a</mi>
+							<mo>&ne;</mo>
+							<mn>0</mn>
+							<mtext>,</mtext>
+							<mspace width="0.5em" />
+							<mi>x</mi>
+							<mtext>- переменная</mtext>
+						</mrow>
+					</math>
+					Выражение слева в уравнении будет многочленом, а точнее, квадратным трёхчленом.
+					<p>
+						Также <dfn title="приведённое">приведённым</dfn> называют квадратное уравнение, где старший коэффициент <i>a</i> равен единице.
+					</p>
+					<p>
+						Уравнение, в котором все коэффиценты отличны от нуля, называется <dfn title="полное квадратное уравнение">полным</dfn>.
+					</p>
+					<p>
+						Уравнение, в котором хотя бы один коэффициент (конечно, кроме старшего) равен нулю, соответственно, называют <dfn title="неполное квадратное уравнение">неполным</dfn>.
+					</p>
+				</section>
+				<section>
+					<p>
+						Одним из важнейших понятий при решении квадратных уравнений является <a href="4.html">квадратный корень</a>. Решать квадратные уравнения можно <a href="8.html">методом выделения полного квадрата</a>, <a href="9.html">через дискриминант или по теореме Виета через коэффициенты</a> (хотя для решения через Виета уравнение должно быть приведённым, но, если это не так, этого можно легко добиться путём деления всего уравнения на старший коэффициент).
+					</p>
+				</section>
+				<section>
+					<p>
+						Далее обсудим виды квадратных уравнений. Неполных квадратных уравнений есть 3 вида (так как есть всего три набора для 2 коэффицентов, где хотя бы один равен 0). Полное квадратное уравнение решается уже сложнее (подробнее о решении по ссылкам выше).
+					</p>
+					<h2>Неполные квадратные уравнения</h2>
+					<div class="types_chart">
+						<span>
+							b = 0<br>
+							c &ne; 0
+							<br><br>
+							<math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mi>a</mi>
+												<mo>&InvisibleTimes;</mo>
+												<msup>
+													<mi>x</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<mi>c</mi>
+												<mo>=</mo>
+												<mn>0</mn>
+											</mtd>
+											<mtd>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<msup>
+													<mi>x</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>=</mo>
+												<mo>-</mo>
+												<mfrac>
+													<mrow>
+														<mi>a</mi>
+													</mrow>
+													<mrow>
+														<mi>c</mi>
+													</mrow>
+												</mfrac>
+											</mtd>
+											<mtd>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mo>-</mo>
+												<mfrac>
+													<mrow>
+														<mi>c</mi>
+													</mrow>
+													<mrow>
+														<mi>a</mi>
+													</mrow>
+												</mfrac>
+												<mo>&lt;</mo>
+												<mn>0</mn>
+												<mspace width="0.5em" />
+												<mtext>-</mtext>
+												<mspace width="0.5em" />
+												<mtext>нет корней в</mtext>
+												<mspace width="0.3em" />
+												<mi>&reals;</mi>
+											</mtd>
+											<mtd>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mo>-</mo>
+												<mfrac>
+													<mrow>
+														<mi>c</mi>
+													</mrow>
+													<mrow>
+														<mi>a</mi>
+													</mrow>
+												</mfrac>
+												<mo>&gt;</mo>
+												<mn>0</mn>
+												<mspace width="0.5em" />
+												<mtext>-</mtext>
+												<mspace width="0.5em" />
+												<mi>x</mi>
+												<mo>=</mo>
+												<mo>&PlusMinus;</mo>
+												<msqrt>
+													<mfrac>
+														<mrow>
+															<mo>-</mo>
+															<mi>c</mi>
+														</mrow>
+														<mrow>
+															<mi>a</mi>
+														</mrow>
+													</mfrac>
+												</msqrt>
+											</mtd>
+											<mtd>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</math>
+						</span>
+						<span>
+							b &ne; 0<br>
+							c = 0
+							<br><br>
+							<math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mi>a</mi>
+												<mo>&InvisibleTimes;</mo>
+												<msup>
+													<mi>x</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>+</mo>
+												<mi>b</mi>
+												<mo>&InvisibleTimes;</mo>
+												<mi>x</mi>
+												<mo>=</mo>
+												<mn>0</mn>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mi>x</mi>
+												<mo>&InvisibleTimes;</mo>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<mi>a</mi>
+														<mi>x</mi>
+														<mo>+</mo>
+														<mi>b</mi>
+													</mrow>
+												</mfenced>
+												<mo>=</mo>
+												<mn>0</mn>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mfenced open="[" close=" " separators=",">
+													<mrow>
+														<mtable>
+															<mtr>
+																<mtd>
+																	<mi>x</mi>
+																	<mo>=</mo>
+																	<mn>0</mn>
+																</mtd>
+															</mtr>
+															<mtr>
+																<mtd>
+																	<mi>a</mi>
+																	<mo>&InvisibleTimes;</mo>
+																	<mi>x</mi>
+																	<mo>+</mo>
+																	<mi>b</mi>
+																	<mo>=</mo>
+																	<mn>0</mn>
+																</mtd>
+															</mtr>
+														</mtable>
+													</mrow>
+												</mfenced>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mfenced open="[" close=" " separators=",">
+													<mrow>
+														<mtable>
+															<mtr>
+																<mtd>
+																	<mi>x</mi>
+																	<mo>=</mo>
+																	<mn>0</mn>
+																</mtd>
+															</mtr>
+															<mtr>
+																<mtd>
+																	<mi>x</mi>
+																	<mo>=</mo>
+																	<mo>-</mo>
+																	<mfrac>
+																		<mrow>
+																			<mi>b</mi>
+																		</mrow>
+																		<mrow>
+																			<mi>a</mi>
+																		</mrow>
+																	</mfrac>
+																</mtd>
+															</mtr>
+														</mtable>
+													</mrow>
+												</mfenced>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</math>
+						</span>
+						<span>
+							b = 0<br>
+							c = 0
+							<br><br>
+							<math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<mtable>
+										<mtr>
+											<mtd>
+												<mi>a</mi>
+												<mo>&InvisibleTimes;</mo>
+												<msup>
+													<mi>x</mi>
+													<mn>2</mn>
+												</msup>
+												<mo>=</mo>
+												<mn>0</mn>
+											</mtd>
+										</mtr>
+										<mtr>
+											<mtd>
+												<mi>x</mi>
+												<mo>=</mo>
+												<mn>0</mn>
+											</mtd>
+										</mtr>
+									</mtable>
+								</mrow>
+							</math>
+						</span>
+					</div>
+					<p>
+						Как видно из записей выше, для нахождения корней всех 3-ёх видов неполных квадратных уравнений есть свои формулы.
+					</p>
+				</section>
+				<section>
+					<h2>Квадратичная функция</h2>
+					<figure class="center_pic">
+						<img src="Quadratic_function.svg" alt="Квадратичная функция и её свойства">
+						<figcaption>Квадратичная функция и её свойства</figcaption>
+					</figure>
+					<p>
+						При обсуждении квадратных уравнений логично также написать и о квадратичной функции, ибо квадратные уравнения (как полные, так и неполные) задают квадратичную функцию. Зная её свойства и график, можно говорить о многих полезных свойствах квадратных уравнений, поэтому она может даже быть полезна при их решении.
+					</p>
+					<p>
+						Квадратичная функция - каждому значению аргумента соответствуют одно значение функции.
+						Возьмём простейшую квадратичную функцию <i>y = <var>x</var>&sup2;</i>, чтобы лучше разобраться в свойствах квадрата. Помня, что квадрат числа всегда неотрицателен:
+					</p>
+					Область определения: D(x) = (-&infin;; +&infin;).<br>
+					Область значений: E(y) = [0; +&infin;).<br>
+					Абсолютный минимум: точка 0.<br>
+					<i>y(<var>x</var>)</i> является <a href="15.html">чётной функцией</a> (область определения симметрична относительно нуля, график симметричен относительно Oy, и f(-<var>x</var>)=f(<var>x</var>)-очевидно). Также нужно понимать, что <i>y(<var>x</var>)</i> - <i>супераддитивна</i>. Иначе говоря, значение функции, применённой к сумме больше либо равно сумме значений функции, применённой к каждому слагаемому по отдельности: <i>(x+y)&sup2; &ge; x&sup2; + y&sup2;</i><br>
+					<p>
+						Конечно, y(<var>x</var>) связана с функцией квадратного корня (<a href="5.html">подробнее</a>).
+					</p>
+					<p>
+						Итак, обзначим функцию f(<var>x</var>) = a<var>x</var>&sup2;+b<var>x</var>+c. Здесь от знака старшего коэффициента зависит вид параболы - ветвями вверх при a&gt;0 и ветвями вниз при a&lt;0, что логично (так при умножении на -1 <a href="3.html">график отражается по оси Oy</a>). Также от <i>a</i> зависит кривизна и сжатие/расширение графика. Свободный член <i>c</i> является точкой пересечения графика функции с осью ординат (это очевидно, так как график функции пересекает Oy в точке, где аргумент равен 0, если аргумент равен 0, то f(<var>x</var>)=0+c &rArr; f(<var>x</var>) = c и точка пересечения с Oy - <i>(0, c)</i>).
+					</p>
+					<p>
+						Для построения графика <i>f(<var>x</var>)</i> следует найти вершину параболы, а затем понять какая она (ветвями вверх или ветвями вверх). Ясно, что вершина параболы (которая будет абсолютным максимумом для параболы с ветвями вверх и абсолютным минимумом для параболы с ветвями вниз) будет также задавать ось симметрии параболы - прямая через вершину параллельная Oy будет осью симметрии параболы.
+					</p>
+					Поэтому требуется формула для нахождения вершины параболы (<a href="8.html">подробнее о методе выделения полного квадрата</a>).
+					<math display="block">
+						<!--  Created with FireMath www.firemath.info  -->
+						<mrow>
+							<mi>y</mi><mo>&ApplyFunction;</mo>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>&InvisibleTimes;</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<msup>
+										<mi>x</mi>
+										<mn>2</mn>
+									</msup>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mi>b</mi>
+										</mrow>
+										<mrow>
+											<mi>a</mi>
+										</mrow>
+									</mfrac>
+									<mo>&InvisibleTimes;</mo>
+									<mi>x</mi>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mi>c</mi>
+										</mrow>
+										<mrow>
+											<mi>a</mi>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</mfenced>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>&InvisibleTimes;</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<msup>
+										<mi>x</mi>
+										<mn>2</mn>
+									</msup>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mi>b</mi>
+										</mrow>
+										<mrow>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mi>a</mi>
+										</mrow>
+									</mfrac>
+									<mo>&InvisibleTimes;</mo>
+									<mi>x</mi>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<msup>
+												<mi>b</mi>
+												<mn>2</mn>
+											</msup>
+										</mrow>
+										<mrow>
+											<mn>4</mn>
+											<mo>&InvisibleTimes;</mo>
+											<msup>
+												<mi>a</mi>
+												<mn>2</mn>
+											</msup>
+										</mrow>
+									</mfrac>
+									<mo>-</mo>
+									<mfrac>
+										<mrow>
+											<msup>
+												<mi>b</mi>
+												<mn>2</mn>
+											</msup>
+										</mrow>
+										<mrow>
+											<mn>4</mn>
+											<mo>&InvisibleTimes;</mo>
+											<msup>
+												<mi>a</mi>
+												<mn>2</mn>
+											</msup>
+										</mrow>
+									</mfrac>
+									<mo>+</mo>
+									<mfrac>
+										<mrow>
+											<mi>c</mi>
+										</mrow>
+										<mrow>
+											<mi>a</mi>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</mfenced>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>&InvisibleTimes;</mo>
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>x</mi>
+											<mo>+</mo>
+											<mfrac>
+												<mrow>
+													<mi>b</mi>
+												</mrow>
+												<mrow>
+													<mn>2</mn>
+													<mo>&InvisibleTimes;</mo>
+													<mi>a</mi>
+												</mrow>
+											</mfrac>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>-</mo>
+							<mfrac>
+								<mrow>
+									<msup>
+										<mi>b</mi>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+								<mrow>
+									<mn>4</mn>
+									<mo>&InvisibleTimes;</mo>
+									<msup>
+										<mi>a</mi>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+							</mfrac>
+							<mo>+</mo>
+							<mfrac>
+								<mrow>
+									<mi>c</mi>
+								</mrow>
+								<mrow>
+									<mi>a</mi>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>&InvisibleTimes;</mo>
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>x</mi>
+											<mo>-</mo>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<mo>-</mo>
+													<mfrac>
+														<mrow>
+															<mi>b</mi>
+														</mrow>
+														<mrow>
+															<mn>2</mn>
+															<mo>&InvisibleTimes;</mo>
+															<mi>a</mi>
+														</mrow>
+													</mfrac>
+												</mrow>
+											</mfenced>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>+</mo>
+							<mfrac>
+								<mrow>
+									<mn>4</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+									<mo>&InvisibleTimes;</mo>
+									<mi>c</mi>
+									<mo>-</mo>
+									<msup>
+										<mi>b</mi>
+										<mn>2</mn>
+									</msup>
+								</mrow>
+								<mrow>
+									<mn>4</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+								</mrow>
+							</mfrac>
+							<mo>=</mo>
+							<mi>a</mi>
+							<mo>&InvisibleTimes;</mo>
+							<msup>
+								<mrow>
+									<mfenced open="(" close=")" separators=",">
+										<mrow>
+											<mi>x</mi>
+											<mo>-</mo>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<mo>-</mo>
+													<mfrac>
+														<mrow>
+															<mi>b</mi>
+														</mrow>
+														<mrow>
+															<mn>2</mn>
+															<mo>&InvisibleTimes;</mo>
+															<mi>a</mi>
+														</mrow>
+													</mfrac>
+												</mrow>
+											</mfenced>
+										</mrow>
+									</mfenced>
+								</mrow>
+								<mn>2</mn>
+							</msup>
+							<mo>+</mo>
+							<mfrac>
+								<mrow>
+									<mo>-</mo>
+									<mi>D</mi><mo>&ApplyFunction;</mo>
+								</mrow>
+								<mrow>
+									<mn>4</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
+					<math display="block">
+						<mrow>
+							<msub>
+								<mi>x</mi>
+								<mtext>в</mtext>
+							</msub>
+							<mo>=</mo>
+							<mo>-</mo>
+							<mfrac>
+								<mrow>
+									<mi>b</mi>
+								</mrow>
+								<mrow>
+									<mn>2</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+								</mrow>
+							</mfrac>
+							<mtext>;</mtext>
+							<mspace width="0.5em" />
+							<msub>
+								<mi>y</mi>
+								<mtext>в</mtext>
+							</msub>
+							<mo>=</mo>
+							<mfrac>
+								<mrow>
+									<mo>-</mo>
+									<mi>D</mi><mo>&ApplyFunction;</mo>
+								</mrow>
+								<mrow>
+									<mn>4</mn>
+									<mo>&InvisibleTimes;</mo>
+									<mi>a</mi>
+								</mrow>
+							</mfrac>
+						</mrow>
+					</math>
+					<p>
+						Для нахождения вершины достаточно лишь формулы x-вершины <i>x<sub>в</sub></i>, так как y-вершину можно найти, просто подставив <i>x<sub>в</sub></i> в функцию. Как видно из наглядных графиков выше наибольший интерес представляет дискриминант (обозначенный здесь <i>D</i>), так как он является достаточно просто вычисляемым для многочлена с небольшой степенью (второй). Более подробно о дискриминанте и его значении рассказано <a href="9.html">на соответсвующей странице</a>, а также там более подробно рассказано об уже описанном здесь и о том, как используя дискриминант и коэффициенты можно быстро оценить корни квадратного уравнения. Следует также заметить, что по формуле корней квадратного уравнения с дискриминантом, можно вычеслить расстояние от нулей функции до оси симметрии. Дискриминант указывает и количество нулей параболы.
+					</p>
+					Итак, квадратичную функцию можно представить 3-мя удобными способами:
+					<ul>
+						<li><i>y=ax&sup2;+bx+c</i> (стандартная форма)</li>
+						<li><i>y=a(x-x<sub>1</sub>)(x-x<sub>2</sub>)</i> (факторизованная форма)</li>
+						<li><i>y=a(x+(b/2a))&sup2; - (4ac+b&sup2;)/4a</i> (форма, показывающая вершину параболы)</li>
+					</ul>
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>

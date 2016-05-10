@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Экзамен по математике</title>
+		<script type="text/x-mathjax-config">
+			MathJax.Hub.Config({
+				CommonHTML: { linebreaks: { automatic: true } },
+				"HTML-CSS": { linebreaks: { automatic: true } },
+				SVG: { linebreaks: { automatic: true } }
+				});
+		</script>
+		<script type="text/javascript" src="MathJax/MathJax.js?config=MML_HTMLorMML"></script>
+		<link rel="stylesheet" href="normalize.css">
+		<link rel="stylesheet" href="main.css">
+	</head>
+	<body>
+		<header>
+			<h1>Квадратный корень из произведения, дроби и степени. Вынесение множителя из-под знака корня, внесение под знак корня. Функция y = &radic;x и её график</h1>
+		</header>
+		<main>
+			<article>
+				<section>
+					<h2>Арифметический квадратный корень</h2>
+					<figure>
+						<img src="Square_root_function.svg" alt="График функции арифметического квадратного кореня">
+						<figcaption>График функции арифметического квадратного кореня - <var>y</var> = &radic;<var>x</var></figcaption>
+					</figure>
+					В ходе этой темы под квадратным корнем будет всегда подразумеваться лишь арифметический, если не указано обратное (<a href="4.html">узнать больше о квадратном корне и тонкостях его точного определения</a>).
+				</section>
+				<section>
+					<h2>Свойства квадратного корня</h2>
+					<p>При работе с квадратным корнем можно пользоваться его определёнными свойствами, перечисленными ниже.</p>
+					<section>
+						<h3>Теорема 1</h3>
+						<p>
+							Квадратный корень из произведения неотрицательных множителей равен произвдению квадратов корней из этих множителей (множителей может быть любое число).
+							<math display="inline">
+								<mrow>
+									<msqrt>
+										<mi>a</mi>
+										<mo>&InvisibleTimes;</mo>
+										<mi>b</mi>
+									</msqrt>
+									<mo>=</mo>
+									<msqrt>
+										<mi>a</mi>
+									</msqrt>
+									<mo>&times;</mo>
+									<msqrt>
+										<mi>b</mi>
+									</msqrt>
+									<mspace width="0.5em" />
+									<mo>&forall;</mo>
+									<mi>a</mi>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+									<mtext>,</mtext>
+									<mspace width="0.5em" />
+									<mi>b</mi>
+									<mo>&geq;</mo>
+									<mn>0</mn>
+								</mrow>
+							</math>
+						</p>
+						Доказательство (для удобства возьмём два множителя, хотя то же верно для любого количества).<br>
+						<math display="block">
+							<mrow>
+								<mo>&#x25FD;</mo>
+								<msup>
+									<mrow>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msqrt>
+													<mi>a</mi>
+												</msqrt>
+												<mo>&times;</mo>
+												<msqrt>
+													<mi>b</mi>
+												</msqrt>
+											</mrow>
+										</mfenced>
+									</mrow>
+									<mn>2</mn>
+								</msup>
+								<mo>=</mo>
+								<msup>
+									<mrow>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msqrt>
+													<mi>a</mi>
+												</msqrt>
+											</mrow>
+										</mfenced>
+									</mrow>
+									<mn>2</mn>
+								</msup>
+								<mo>&times;</mo>
+								<msup>
+									<mrow>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msqrt>
+													<mi>b</mi>
+												</msqrt>
+											</mrow>
+										</mfenced>
+									</mrow>
+									<mn>2</mn>
+								</msup>
+								<mo>=</mo>
+								<mi>a</mi>
+								<mo>&InvisibleTimes;</mo>
+								<mi>b</mi>
+								<mo>&#x25FD;</mo>
+							</mrow>
+						</math>
+					</section>
+					<section>
+						<h3>Теорема 2</h3>
+						<p>
+							Квадратный корень из дроби с неотрицательным числителем и положительным знаменателем равен частному от деления квадратного корня из числителя на квадратный корень из знаменателя.
+							<math display="inline">
+								<mrow>
+									<msqrt>
+										<mfrac>
+											<mrow>
+												<mi>a</mi>
+											</mrow>
+											<mrow>
+												<mi>b</mi>
+											</mrow>
+										</mfrac>
+									</msqrt>
+									<mo>=</mo>
+									<mfrac>
+										<mrow>
+											<msqrt>
+												<mi>a</mi>
+											</msqrt>
+										</mrow>
+										<mrow>
+											<msqrt>
+												<mi>b</mi>
+											</msqrt>
+										</mrow>
+									</mfrac>
+								</mrow>
+							</math>
+							(Конечно, подразумевается, что а&ge;0 и b&gt;0; однако, важно помнить, что b именно строго больше 0, а иначе дробь не будет иметь смысла, т.к. деление на ноль неопределено).
+						</p>
+						Доказательство (конечно, мы опять берём существующую положительную дробь, чтобы выражение имело смысл).
+						<math display="block">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mo>&#x25FD;</mo>
+								<msup>
+									<mrow>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<msqrt>
+													<mfrac>
+														<mrow>
+															<mi>a</mi>
+														</mrow>
+														<mrow>
+															<mi>b</mi>
+														</mrow>
+													</mfrac>
+												</msqrt>
+											</mrow>
+										</mfenced>
+									</mrow>
+									<mn>2</mn>
+								</msup>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+									</mrow>
+									<mrow>
+										<mi>b</mi>
+									</mrow>
+								</mfrac>
+								<mspace width="0.5em" />
+								<mtext>и</mtext>
+								<mspace width="0.5em" />
+								<msup>
+									<mrow>
+										<mfenced open="(" close=")" separators=",">
+											<mrow>
+												<mfrac>
+													<mrow>
+														<msqrt>
+															<mi>a</mi>
+														</msqrt>
+													</mrow>
+													<mrow>
+														<msqrt>
+															<mi>b</mi>
+														</msqrt>
+													</mrow>
+												</mfrac>
+											</mrow>
+										</mfenced>
+									</mrow>
+									<mn>2</mn>
+								</msup>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<msup>
+											<mrow>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<msqrt>
+															<mi>a</mi>
+														</msqrt>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mn>2</mn>
+										</msup>
+									</mrow>
+									<mrow>
+										<msup>
+											<mrow>
+												<mfenced open="(" close=")" separators=",">
+													<mrow>
+														<msqrt>
+															<mi>b</mi>
+														</msqrt>
+													</mrow>
+												</mfenced>
+											</mrow>
+											<mn>2</mn>
+										</msup>
+									</mrow>
+								</mfrac>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<mi>a</mi>
+									</mrow>
+									<mrow>
+										<mi>b</mi>
+									</mrow>
+								</mfrac>
+								<mo>&rArr;</mo>
+								<msqrt>
+									<mfrac>
+										<mrow>
+											<mi>a</mi>
+										</mrow>
+										<mrow>
+											<mi>b</mi>
+										</mrow>
+									</mfrac>
+								</msqrt>
+								<mo>=</mo>
+								<mfrac>
+									<mrow>
+										<msqrt>
+											<mi>a</mi>
+										</msqrt>
+									</mrow>
+									<mrow>
+										<msqrt>
+											<mi>b</mi>
+										</msqrt>
+									</mrow>
+								</mfrac>
+								<mo>&#x25FD;</mo>
+							</mrow>
+						</math>
+					</section>
+					<section>
+						<h3>Теорема 3</h3>
+						<p>
+							При любом значении a и натуральном k верно равенство
+							<math display="inline">
+								<!--  Created with FireMath www.firemath.info  -->
+								<mrow>
+									<msqrt>
+										<msup>
+											<mi>a</mi>
+											<mrow>
+												<mn>2</mn>
+												<mo>&InvisibleTimes;</mo>
+												<mi>k</mi>
+											</mrow>
+										</msup>
+									</msqrt>
+									<mo>=</mo>
+									<mfenced open="|" close="|" separators=",">
+										<mrow>
+											<msup>
+												<mi>a</mi>
+												<mi>k</mi>
+											</msup>
+										</mrow>
+									</mfenced>
+								</mrow>
+							</math>
+						</p>
+						Доказательсво. Пусть <var>k</var>=0 для начала, докажем
+						<math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<msqrt>
+									<msup>
+										<mi>a</mi>
+										<mn>2</mn>
+									</msup>
+								</msqrt>
+								<mo>=</mo>
+								<mfenced open="|" close="|" separators=",">
+									<mrow>
+										<mi>a</mi>
+									</mrow>
+								</mfenced>
+							</mrow>
+						</math>
+						Это очевидно верно, так как <var>a</var> не может быть отрицательным. Применим данное тождество (полезное часто при извлечении корня из выражений с переменными и т.д.) к
+						<math display="inline">
+							<mrow>
+								<msqrt>
+									<msup>
+										<mi>a</mi>
+										<mrow>
+											<mn>2</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mi>k</mi>
+										</mrow>
+									</msup>
+								</msqrt>
+							</mrow>
+						</math>
+						, где k &isin; &#8469;, получим:
+						<math display="block">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mo>&#x25FD;</mo>
+								<msqrt>
+									<msup>
+										<mi>a</mi>
+										<mrow>
+											<mn>2</mn>
+											<mi>k</mi>
+										</mrow>
+									</msup>
+								</msqrt>
+								<mo>=</mo>
+								<msqrt>
+									<msup>
+										<mrow>
+											<mfenced open="(" close=")" separators=",">
+												<mrow>
+													<msup>
+														<mi>a</mi>
+														<mi>k</mi>
+													</msup>
+												</mrow>
+											</mfenced>
+										</mrow>
+										<mn>2</mn>
+									</msup>
+								</msqrt>
+								<mo>=</mo>
+								<mfenced open="|" close="|" separators=",">
+									<mrow>
+										<msup>
+											<mi>a</mi>
+											<mi>k</mi>
+										</msup>
+									</mrow>
+								</mfenced>
+								<mo>&#x25FD;</mo>
+							</mrow>
+						</math>
+					</section>
+					Ещё одно свойство или скорее теорема, связанная с неравенствами, рассматривается на <a href="6.html">этой старнице</a>.
+				</section>
+				<section>
+					<h2>Вынесение и внесение множителя из-под и под знак корня</h2>
+					<p>
+						Кроме перечисленных выше и нескольких очевидных операций из-под знака корня можно выносить числа, переменные и т. д. Это можно делать, используя первую теорему для выделения множителя, который является квадратом. Пример:
+						<math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<msqrt>
+									<mn>8</mn>
+								</msqrt>
+								<mo>=</mo>
+								<msqrt>
+									<msup>
+										<mn>2</mn>
+										<mn>3</mn>
+									</msup>
+								</msqrt>
+								<mo>=</mo>
+								<msqrt>
+									<msup>
+										<mn>2</mn>
+										<mn>2</mn>
+									</msup>
+									<mo>&times;</mo>
+									<mn>2</mn>
+								</msqrt>
+								<mo>=</mo>
+								<msqrt>
+									<msup>
+										<mn>2</mn>
+										<mn>2</mn>
+									</msup>
+								</msqrt>
+								<mo>&times;</mo>
+								<msqrt>
+									<mn>2</mn>
+								</msqrt>
+								<mo>=</mo>
+								<mn>2</mn>
+								<msqrt>
+									<mn>2</mn>
+								</msqrt>
+							</mrow>
+						</math>.
+					</p>
+					<p>
+						Как уже было выяснино, можно выносить множители из-под корня, но, конечно, существует и обратное действие - внесение множителей под корень. Пример:
+						<math display="inline">
+							<!--  Created with FireMath www.firemath.info  -->
+							<mrow>
+								<mn>3</mn>
+								<mo>&times;</mo>
+								<msqrt>
+									<mn>5</mn>
+								</msqrt>
+								<mo>=</mo>
+								<msqrt>
+									<msup>
+										<mn>3</mn>
+										<mn>2</mn>
+									</msup>
+								</msqrt>
+								<mo>&times;</mo>
+								<msqrt>
+									<mn>5</mn>
+								</msqrt>
+								<mo>=</mo>
+								<msqrt>
+									<mn>9</mn>
+									<mo>&times;</mo>
+									<mn>5</mn>
+								</msqrt>
+								<mo>=</mo>
+								<msqrt>
+									<mn>4</mn>
+									<mn>5</mn>
+								</msqrt>
+							</mrow>
+						</math>
+					</p>
+				</section>
+				<section>
+					<h2>Функция y=&radic;x</h2>
+					<figure>
+						<img src="Wikipedia/Square_root_function_with_two_values.svg" alt="Wikipedia square root function graph">
+						<figcaption>График квадратного корня (не арифметического) или функции квадратного корня f(x) и противоположной ей функции -f(x) из Wikipedia, добавленный, чтобы показать всю параболу</figcaption>
+					</figure>
+					Функция квадратного корня
+					<math display="inline">
+						<mrow>
+							<mi>f</mi><mo>&ApplyFunction;</mo>
+							<mfenced open="(" close=")" separators=",">
+								<mrow>
+									<mi>x</mi>
+								</mrow>
+							</mfenced>
+							<mo>=</mo>
+							<msqrt>
+								<mi>x</mi>
+							</msqrt>
+						</mrow>
+					</math>
+					есть на графике сверху страницы, является элементарной функцией. Квадратный корень из x имеет смысл при любом неотрицательном значении x &there4; любому неотрицательному числу соответствует единтсвенное значение выражения. Значит, очевидно, y=&radic;x задаёт функцию. Быстро возрастает до 0.5, потом медленнее. По сути, является половиной параболы, повёрнутой на 90&deg; (см. график рядом). Поэтому её график тесно связан с графиком функции y = x&sup2;, где x&ge;0. На графике ниже показана функция квадратного корня и связанные с ней.<br>
+					Область определения: D(x)=[0; +&infin;) - в русских учебниках область определения записывается D(f).<br>
+					Область значений: E(f)=[0; +&infin;).<br>
+					Функция <i>f(x)</i> является монотонной - строго возрастающей. Точкой абсолютного минимума <i>f(x)</i> является 0. Нужно добавить, что в противовес квадратичной функции <i>y=<var>x</var>&sup2;</i>, функция квадратного корня является субаддитивной - значение функции от суммы элементов всегда меньше либо равна сумме значений функции, применённой к каждому элементу по отдельности: <i>&radic;(<var>x</var>+<var>y</var>) &le; &radic;x + &radic;y</i>.<br>
+					<figure class="center_pic">
+						<img src="Square_root_and_square_of_non-negative_num.svg" alt="Функция квадратного корня, квадратная функция">
+						<figcaption>Функция <var>x</var> = &radic;<var>y</var> и функция <var>y</var> = <var>x</var>&sup2;</figcaption>
+					</figure>
+				</section>
+			</article>
+		</main>
+		<footer>
+			fedor1113<br/>
+			<a href="index.html">К остальным темам</a>
+		</footer>
+	</body>
+</html>
