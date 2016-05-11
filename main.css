@@ -116,6 +116,17 @@ math[display="block"]{
 	width: 50%;
 }
 
+#github{
+	float: inherit;
+	display: inherit;
+	width: inherit;
+	height: inherit;
+	clear: inherit;
+	text-align: inherit;
+	position: absolute;
+	margin: inherit;
+}
+
 .types_chart{
 	-webkit-display: -webkit-box;
 	-webkit-display: -webkit-flex;
