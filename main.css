@@ -27,6 +27,12 @@ h3, h4, h5, h6{
 	text-align: left;
 }
 
+header h1 span{
+	font-weight: 900;
+	font-stretch: extra-expanded;
+	font-size: 1.5em;
+}
+
 figcaption{
 	text-align: right;
 	font-style: italic;
@@ -143,6 +149,21 @@ table, tr, td, th, td > img{
 ul, ol{
 	margin-left: 0.3em;
 }
+
+/*div#page_loader{
+	display: block;
+	position: absolute;
+	top: 0;
+	bottom: 0%;
+	left: 0;
+	right: 0%;
+	background-color: white;
+	z-index: 99;
+	text-align: center;
+	width: 100%;
+	padding-top: 25px;
+	display: none;
+}*/
 
 @media only screen and (max-width: 490px){
 	img, .center_pic > img{
