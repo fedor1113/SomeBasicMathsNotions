@@ -23,8 +23,12 @@ footer{
 footer img{
 	display: inline-block;
 	max-height: 15%;
-	height: 15%;
+	height: 10%;
 	max-width: 5%;
+}
+
+footer img[src="HTML5_Logo_Badge.svg"], footer img[src="svg-logo.svg"]{
+	width: 2%;
 }
 
 h, h1, h2, h3, h4, h5, h6{
