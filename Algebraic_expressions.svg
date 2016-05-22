@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?xml-stylesheet type="text/css" href="main.css"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"> <!--31 user points - unity-->
+<svg viewBox="0 0 500 400" preserveAspectRatio="xMidYMid meet"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" baseProfile="full"> <!--31 user points - unity-->
 	<title>Виды алгебраических выражений</title>
 	<desc>Виды алгебраических выражений.</desc>
 	<defs>

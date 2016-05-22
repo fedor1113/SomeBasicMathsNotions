@@ -20,6 +20,13 @@ footer{
 	background: rgba(255, 255, 255, 0.5);
 }
 
+footer img{
+	display: inline-block;
+	max-height: 15%;
+	height: 15%;
+	max-width: 5%;
+}
+
 h, h1, h2, h3, h4, h5, h6{
 	background-color: firebrick;
 	color: gold;
