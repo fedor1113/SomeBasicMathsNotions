@@ -2,6 +2,14 @@ html{
 	font-size: 1.5em;
 }
 
+@font-face{
+	font-family: "unified_mono";
+	src: local("FreeMono"),
+		 url("/Fonts/FreeMono.otf") format("opentype"),
+		 url("/Fonts/FreeMono.ttf") format("truetype");
+	font-weight: normal;
+}
+
 footer{
 	display: block;
 	width: 100%;
