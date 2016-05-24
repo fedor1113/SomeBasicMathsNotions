@@ -20,5 +20,11 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Any W3C icon is a subject to its original license and cannot be modified
-in many ways.
+----
+Any W3C icon is subject to its original license and cannot be modified
+in many ways. The license that applies to the W3C icons can be found on 
+their website (towards which points the link put on the icons here).
+This project uses MathJax to render MathML. MathJax (with all
+related files) is also subject to its own license - Apache 2.0. It is 
+embedded as a separate project - a Git submodule. Its license can
+be found in its own repository.
