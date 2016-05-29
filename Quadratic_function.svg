@@ -88,7 +88,7 @@
 	<text x="110" y="410" font-family="unified_mono, sans-serif" font-weight="bolder" font-size="40" fill="black">a &gt; 0</text>
 	<text x="110" y="930" font-family="unified_mono, sans-serif" font-weight="bolder" font-size="40" fill="black">a &lt; 0</text>
 
-	<text x="510" y="72" font-family="unified_mono, sans-serif" font-weight="bolder" font-size="40" fill="black">D &lt; 0</text>
+	<text x="510" y="72" font-family="unified_mono, sans-serif" font-weight="bolder" font-size="40" fill="black">D &gt; 0</text>
 	<text x="1030" y="72" font-family="unified_mono, sans-serif" font-weight="bolder" font-size="40" fill="black">D = 0</text>
-	<text x="1550" y="72" font-family="unified_mono, sans-serif" font-weight="bolder" font-size="40" fill="black">D &gt; 0</text>
+	<text x="1550" y="72" font-family="unified_mono, sans-serif" font-weight="bolder" font-size="40" fill="black">D &lt; 0</text>
 </svg>
