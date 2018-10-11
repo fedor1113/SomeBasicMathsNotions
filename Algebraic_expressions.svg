@@ -15,11 +15,10 @@
 		</style>
 	</defs>
 	<text x="100"  y="20"
-        style="font-family: Times New Roman, unified_mono;
-               font-size  : 24;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: bolder;
                stroke     : black;
-               fill       : firebrick;">
+               fill       : firebrick;" font-size="24">
 		Алгебраические выражения
 	</text>
 	<line x1="250" y1="25" x2="250" y2="100" stroke="black" />
@@ -27,20 +26,18 @@
 	<line x1="100" y1="100" x2="100" y2="150" stroke="black" />
 	<line x1="400" y1="100" x2="400" y2="150" stroke="black" />
 	<text x="45"  y="160"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 24;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
                fill       : black;
-			   text-decoration: underline;">
+			   text-decoration: underline;" font-size="24">
 		Рациональные
 	</text>
 	<text x="285"  y="160"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 24;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
-               fill       : black;">
+               fill       : black;" font-size="24">
 		Иррациональные
 	</text>
 	<line x1="100" y1="165" x2="100" y2="220" stroke="black" />
@@ -48,67 +45,60 @@
 	<line x1="40" y1="220" x2="40" y2="260" stroke="black" />
 	<line x1="160" y1="220" x2="160" y2="260" stroke="black" />
 	<text x="20"  y="270"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 20;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
-               fill       : black;">
+               fill       : black;" font-size="20">
 		Целые
 	</text>
 	<text x="120"  y="270"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 20;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
-               fill       : black;">
+               fill       : black;" font-size="20">
 		Дробные
 	</text>
 	<line x1="40" y1="270" x2="40" y2="310" stroke="black" />
 	<text x="10"  y="310"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 20;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
                fill       : black;
-			   font-style: italic;">
+			   font-style: italic;" font-size="20">
 		Многочлены
 	</text>
 	<line x1="40" y1="315" x2="40" y2="340" stroke="black" />
 	<text x="10"  y="350"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 20;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
                fill       : black;
-			   font-style: italic;">
+			   font-style: italic;" font-size="20">
 		Одночлены
 	</text>
 	<text x="10"  y="370"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 20;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
                fill       : black;
-			   font-style: italic;">
+			   font-style: italic;" font-size="20">
 		(мономы)
 	</text>
 	<line x1="160" y1="320" x2="160" y2="270" stroke="black" />
 	<text x="110"  y="330"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 20;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
                fill       : black;
-			   font-style: italic;">
+			   font-style: italic;" font-size="20">
 		Алгебраические
 	</text>
 	<text x="140"  y="350"
-        style="font-family: 'Times New Roman', unified_mono;
-               font-size  : 20;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono;
 			   font-weight: 200;
                stroke     : black;
                fill       : black;
-			   font-style: italic;">
+			   font-style: italic;" font-size="20">
 		дроби
 	</text>
 </svg>

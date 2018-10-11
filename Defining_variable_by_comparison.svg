@@ -15,11 +15,10 @@
 		</style>
 	</defs>
 	<text x="15"  y="20"
-        style="font-family: 'Times New Roman', unified_mono, fantasy;
-               font-size  : 28;
+        style="font-family: 'Times New Roman', 'Liberation Serif', unified_mono, fantasy;
 			   font-weight: bolder;
                fill       : firebrick;
-			   font-style: italic;">
+			   font-style: italic;" font-size="28">
 		Оценка значения a по сравнению c b
 	</text>
 	<text x="100" y="50" font-size="26" font-style="italic" font-family="'Times New Roman', unified_mono, fantasy">a=b</text>
